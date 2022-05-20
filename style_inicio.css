@@ -1,39 +1,48 @@
 body {
-    background-color: #BFBFCD;
+    background-color: #EEEDF5;
     margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
 }
+
 
 /*cabeçalho*/
 header {
     background-color: #050539;
     width: 100%;
+    height: 70px;
 }
-#elementos {
-    padding: 25px;
-    text-align: right;
-    align-items: center;
+#elementosHeader {
+   align-items: center;
     color: white;
+    align-items: center;
 }
-.localização, .inicio {
-    text-align: right;
-    margin-left: 20px;
-    margin-right: 20px;
+.localização,
+.inicio {
+    padding-left: 40px;
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    float: right;
+    padding-top: 22px;
+}
+.login{
+    float: right;
+    padding-right: 25px;
+    padding-top: 17px;
+    padding-left: 40px;
 }
 
 
 /*logo/municípios*/
 nav {
     background-color: #050539;
-    height:350px;
-    width:100%;
+    height: 350px;
+    width: 100%;
     align-items: center;
 }
-#elementosNav{
-    height:200px;
-    width:100%;
-    
+#elementosNav {
+    height: 200px;
+    width: 100%;
 }
 #logo {
     width: 23%;
@@ -41,26 +50,66 @@ nav {
     padding-right: 200px;
     padding-left: 80px;
 }
-#txt{
+#txt {
     color: white;
-    font-size: 40px;
+    font-size: 36px; 
     float: left;
-    padding-top: 60px;
+    padding-top: 65px;
+    font-weight: bold
 }
 #btnCidades {
-    padding-top: 70px;
+    padding-top: 74px;
     text-align: center;
 }
-button{
+button {
     margin-left: 72px;
     margin-right: 72px;
-    height: 80px;
+    height: 76px;
     width: 210px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: none;
-    font-size: x-large;
+    font-size: 26px;
     background-color: #37327C;
     color: white;
 }
+#btnSelecionado {
+    background: #EEEDF5;
+    color: #050539;
+}
 
+
+/*corpo da página*/
+#container {
+    height: 98px;
+    width: 84%;
+    background-color: #312E59;
+    border-radius:10px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+    box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.578);
+}
+h1 {
+    padding-left: 3%;
+    padding-top: 28px;
+    font-size: 36px;
+    font-weight: bold
+}
+
+
+
+/*rodapé*/
+footer {
+    background-color: #050539;
+    width: 100%;
+    height: 70px;
+    margin-top: 200px;
+}
+#elementosRodapé{
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 18px; 
+}
