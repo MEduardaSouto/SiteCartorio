@@ -20,7 +20,7 @@ header {
     float: right;
     padding-top: 22px;
 }
-.login{
+#login{
     float: right;
     padding-right: 25px;
     padding-top: 17px;
@@ -58,10 +58,10 @@ nav {
     text-align: center;
 }
 button {
-    margin-left: 72px;
-    margin-right: 72px;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
     height: 76px;
-    width: 210px;
+    width: 14%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: none;
@@ -78,7 +78,7 @@ button {
 /*corpo da página*/
 #container {
     height: 98px;
-    width: 84%;
+    width: 85%;
     background-color: #312E59;
     border-radius:10px;
     color: white;
