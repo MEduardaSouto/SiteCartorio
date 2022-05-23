@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Styles/style_inicio.css" media="screen" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Cartórios Franciso da Motta</title>
 
 </head>
+
 
 <body>
 
@@ -53,6 +58,56 @@
         <div id="container">
             <h1>SERVIÇOS</h1>
         </div>
+
+        <div id="listaServicos">
+
+            <ul class="lista">
+                
+                  <span palmeiras></span>
+                  <ul>
+                    <li id="listaPai">
+                      <span palmeiras >Registro de Nascimento. (Certidão comum ou inteiro teor) </span>
+                      <ul>
+                        <li id="listaFilha" class="containerLi">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+
+                            <a href="#" id="BtIniciarAgen" class="btiniciarAgendamento">Iniciar agendamento</a> 
+                            
+                        
+                        </li>
+                      </ul>
+                    
+                    <br>
+                      <span palmeiras>Registro de Casamento</span>
+                      <ul>
+                          <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+
+                            <a href="#" id="BtIniciarAgen" class="btiniciarAgendamento">Iniciar agendamento</a> 
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    </li>
+                  </ul>
+                
+                
+                 
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              
+        </div>
+
+        
     </section>
 
 
@@ -66,5 +121,15 @@
 
 
 </body>
+<script>
+
+    document.querySelectorAll('[palmeiras]').forEach(folder => {
+        folder.onclick = function (e) {
+        const ul = folder.nextElementSibling
+        const d = ul.style.display
+        ul.style.display = d === 'none' ? 'block' : 'none'
+        }
+        })
+</script>
 
 </html>
