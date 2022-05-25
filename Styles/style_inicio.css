@@ -12,7 +12,9 @@ header {
     height: 10%;
     position: fixed;
 }
-.localização, .inicio {
+
+.localização,
+.inicio {
     padding-left: 40px;
     color: white;
     text-decoration: none;
@@ -20,7 +22,8 @@ header {
     float: right;
     padding-top: 22px;
 }
-#login{
+
+#login {
     float: right;
     padding-right: 25px;
     padding-top: 17px;
@@ -36,27 +39,32 @@ nav {
     width: 100%;
     padding-top: 100px;
 }
+
 #elementosNav {
     height: 200px;
     width: 100%;
 }
+
 #logo {
     width: 370px;
     float: left;
     padding-right: 200px;
     padding-left: 80px;
 }
+
 #txt {
     color: white;
-    font-size: 36px; 
+    font-size: 36px;
     float: left;
     padding-top: 65px;
     font-weight: bold
 }
+
 #btnCidades {
     padding-top: 74px;
     text-align: center;
 }
+
 button {
     margin-left: 4.5%;
     margin-right: 4.5%;
@@ -69,6 +77,7 @@ button {
     background-color: #37327C;
     color: white;
 }
+
 #btnSelecionado {
     background: #EEEDF5;
     color: #050539;
@@ -80,13 +89,14 @@ button {
     height: 98px;
     width: 85%;
     background-color: #312E59;
-    border-radius:10px;
+    border-radius: 10px;
     color: white;
     margin-left: auto;
     margin-right: auto;
     margin-top: 110px;
     box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.578);
 }
+
 h1 {
     padding-left: 3%;
     padding-top: 28px;
@@ -103,11 +113,12 @@ footer {
     height: 10%;
     margin-top: 200px;
 }
-#elementosRodapé{
+
+#elementosRodapé {
     padding: 25px;
     text-align: center;
     color: white;
-    font-size: 18px; 
+    font-size: 18px;
 }
 
 /*ListadeSerciçosPalmeiras*/
@@ -115,79 +126,81 @@ footer {
 .lista * {
     list-style-type: none;
 
-  }
+}
 
 .lista li:hover {
     cursor: pointer;
-    
+
 }
-  
-  .lista li a {
+
+.lista li a {
     color: rgb(252, 252, 252);
     text-decoration: solid;
-    font-size: 20px;
-    border-radius: 5%;
-    
-  }
-  
-  .lista ul {
+    font-size: 16px;
+    border-radius: 7px;
+    padding-top: 6px;
+}
+
+.lista ul {
     padding-left: 25px;
-  }
-  
-  ul.lista,
-  .lista li {
+}
+
+ul.lista,
+.lista li {
     padding-left: 0px;
     padding-top: 5px;
-  }
-  
-  ul.lista,
-  ul.lista ul {
+}
+
+ul.lista,
+ul.lista ul {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  ul.lista ul {
+}
+
+ul.lista ul {
     margin-left: 10px;
-  }
-  
-  
-  
-  ul.lista li:last-child {
+}
+
+
+
+ul.lista li:last-child {
     border-left: none;
-  }
-  
-  
-  
-  ul.lista li:last-child:before {
+}
+
+
+
+ul.lista li:last-child:before {
     border-left: 1px solid rgb(100, 100, 100);
-  }
+}
 
-  #listaFilha {
-      background-color: rgb(199, 208, 216);
-  }
-  .container {
-    display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 25%;
-  }
+#listaFilha {
+    margin-top: 15px;
+    background-color: #DCDBE5;
+    width: 550px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.578);
+    padding-left: 25px;
+    padding-top: 20px;
+}
 
-  #BtIniciarAgen {
-      background-color: #050539;
-  }
+#BtIniciarAgen {
+    background-color: #37327C;
+    float: right;
+    margin-right: 15px;
+    width: 37%;
+    height: 25px;
+    text-align: center;
+    margin-top: 0px;
+}
 
-  
-      
-  
+#listaPai {
+    padding-left: 8%;
+    padding-top: 2%;
+    width: 40%;
+}
 
-
-
-  #listaPai {
-      padding-left: 8%;
-      padding-top: 2%;
-  }
-
-  span {
-      font-size: 30px;
-  }
+span {
+    font-size: 18px;
+}
