@@ -13,7 +13,8 @@ header {
     height: 10%;
     position: fixed;
 }
-.localização, .inicio {
+.localização,
+.inicio {
     padding-left: 40px;
     color: white;
     text-decoration: none;
@@ -21,19 +22,17 @@ header {
     float: right;
     padding-top: 22px;
 }
-#login{
+#btnLogin {
     float: right;
-    padding-right: 25px;
-    padding-top: 17px;
     padding-left: 40px;
     color: white;
+    background-color: #050539;
+    border: none;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 20px;
+    cursor: pointer;
 }
-#logo{
-    float: left;
-    width: 105px;
-    padding-top: 0.5%;
-}
-
 
 /*Corpo da página*/
 
