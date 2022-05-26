@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="Styles/style_inicio.css" media="screen" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+  <script src="Scripts/script_inicio.js" defer></script>
   <title>Cartórios Franciso da Motta</title>
 
 </head>
@@ -14,25 +15,34 @@
 
 <body>
 
-  <header>
-    <!--cabeçalho-->
-
-    <a href="index_adm.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-        class="bi bi-person-circle" id="login" viewBox="0 0 16 16">
+  <header> <!--cabeçalho-->
+    <button id="btnLogin" onclick="openForm()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+        fill="currentColor" class="bi bi-person-circle" id="login" viewBox="0 0 16 16">
         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
         <path fill-rule="evenodd"
           d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-      </svg></a>
-    <a class="localização" href="  ">LOCALIZAÇÃO</a>
+      </svg></button>
+    <a class="localização" href="index_usuário.html">LOCALIZAÇÃO</a>
     <a class="inicio" href="  ">INÍCIO</a>
-
-
   </header>
 
 
-  <nav>
-    <!--logo/municípios-->
+  <div class="form-popup" id="myForm"> <!--pop-out login-->
+    <form action="/action_page.php" class="form-container">
+      <button type="button" class="btn cancel" onclick="closeForm()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg></button>
 
+      <div id="txtLogin">LOGIN</div>
+      <input type="text" placeholder="CPF" name="CPF" required>
+      <input type="password" placeholder="SENHA" name="psw" required>
+      <button type="submit" id="btnEntrar" class="btn">ENTRAR</button>
+    </form>
+  </div>
+
+
+  <nav> <!--logo/municípios-->
     <div id="elementosNav">
       <img id="logo" src="imagens/logo">
       <div id="txt">
@@ -42,16 +52,14 @@
     </div>
     <div id="btnCidades">
       <button id="btnSelecionado">PALMEIRAS</button>
-      <button>CAETÉ AÇU</button>
-      <button>MUCUGÊ</button>
-      <button>IRAQUARA</button>
+      <button id="btnNselecionado">CAETÉ AÇU</button>
+      <button id="btnNselecionado">MUCUGÊ</button>
+      <button id="btnNselecionado">IRAQUARA</button>
     </div>
-
   </nav>
 
 
-  <section>
-    <!--Corpo da página-->
+  <section> <!--Corpo da página-->
     <div id="container">
       <h1>SERVIÇOS</h1>
     </div>
@@ -59,7 +67,6 @@
     <div id="listaServicos">
 
       <ul class="lista">
-
         <span palmeiras></span>
         <ul>
           <li id="listaPai">
@@ -71,7 +78,8 @@
               </svg> Registro de Nascimento. (Certidão comum ou inteiro teor) </span>
             <ul>
               <li id="listaFilha">
-                Documentação necessária: <a href="imagens/Documentação.pdf" style="color: #050539;" download> Clique para baixar o arquivo </a> <br>
+                Documentação necessária: <a href="imagens/Documentação.pdf" style="color: #050539;" download> Clique
+                  para baixar o arquivo </a> <br>
                 Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais <br>
                 Localização do cartório: Rua num sei oque das quantas <br>
                 Horário de funcionamento: 07:00 ás 20:00 <br>
@@ -81,7 +89,7 @@
 
 
             <br>
-            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -261,8 +269,7 @@
   </section>
 
 
-  <footer>
-    <!--Rodapé-->
+  <footer> <!--Rodapé-->
     <div id="elementosRodapé">
       Cartórios Francisco da Motta | Agradecemos sua visita
     </div>
@@ -271,15 +278,5 @@
 
 
 </body>
-<script>
-
-  document.querySelectorAll('[palmeiras]').forEach(folder => {
-    folder.onclick = function (e) {
-      const ul = folder.nextElementSibling
-      const d = ul.style.display
-      ul.style.display = d === 'none' ? 'block' : 'none'
-    }
-  })
-</script>
 
 </html>

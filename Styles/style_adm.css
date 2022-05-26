@@ -1,0 +1,130 @@
+body {
+    background-color: #EEEDF5;
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/*cabeçalho*/
+header {
+    background-color: #050539;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+}
+.localização, .inicio {
+    padding-left: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    float: right;
+    padding-top: 22px;
+}
+#login{
+    float: right;
+    padding-right: 25px;
+    padding-top: 17px;
+    padding-left: 40px;
+    color: white;
+}
+#logo{
+    float: left;
+    width: 105px;
+    padding-top: 0.5%;
+}
+
+
+/*Corpo da página*/
+section{
+    margin-top: 0px;
+    padding-top: 30px;
+    
+}
+#container {
+    height: 98px;
+    width: 85%;
+    background-color: #312E59;
+    border-radius:10px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+    box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.578);
+}
+h1{
+    padding-left: 3%;
+    padding-top: 28px;
+    font-size: 36px;
+    font-weight: bold
+}
+#texto{
+    color: #312E59;
+    margin-left: 7.5%;
+    padding-top: 25px;
+    font-weight: bold;
+}
+#container2{
+    height: auto;
+    width: 85%;
+    background-color: #DCDBE5;
+    border-radius: 8.39px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    width: 100%;
+    font-size: large;
+}
+tr{
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr 1fr;
+}
+th{
+    color: #050539;
+    margin-bottom: 15px;
+}
+td{
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    border-radius: 8.39px;
+    background-color: white;
+    padding: 10px;
+    color: #050539;
+}
+.exibirMais input{
+   display: none;
+}
+.exibirMais{
+    background-color: transparent;
+    background-image: url(https://api.iconify.design/bi/play-circle-fill.svg?color=white);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+.analise{
+    color: #2B22A0;
+}
+.pendente{
+    color: #C71313;
+}
+.concluida{
+    color: #33b838;
+}
+
+/*rodapé*/
+footer {
+    background-color: #050539;
+    width: 100%;
+    height: 10%;
+    margin-top: 50px;
+}
+
+#elementosRodapé {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+

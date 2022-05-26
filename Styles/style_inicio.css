@@ -23,12 +23,16 @@ header {
     padding-top: 22px;
 }
 
-#login {
+#btnLogin {
     float: right;
-    padding-right: 25px;
-    padding-top: 17px;
     padding-left: 40px;
     color: white;
+    background-color: #050539;
+    border: none;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 20px;
+    cursor: pointer;
 }
 
 
@@ -65,7 +69,8 @@ nav {
     text-align: center;
 }
 
-button {
+
+#btnNselecionado {
     margin-left: 4.5%;
     margin-right: 4.5%;
     height: 76px;
@@ -76,11 +81,26 @@ button {
     font-size: 26px;
     background-color: #37327C;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
 }
 
 #btnSelecionado {
     background: #EEEDF5;
     color: #050539;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+    height: 76px;
+    width: 14%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#btnNselecionado:hover {
+    box-shadow: 0px -3px 30px rgba(0, 0, 0, 0.578);
 }
 
 
@@ -109,12 +129,10 @@ h1 {
 /*ListadeSerciçosPalmeiras*/
 .lista * {
     list-style-type: none;
-
 }
 
 .lista li:hover {
     cursor: pointer;
-
 }
 
 .lista li a {
@@ -167,6 +185,7 @@ ul.lista li:last-child:before {
     padding-left: 25px;
     padding-top: 20px;
     color: #050539;
+    cursor: default;
 }
 
 #BtIniciarAgen {
@@ -179,15 +198,21 @@ ul.lista li:last-child:before {
     margin-top: 10px;
 }
 
+#BtIniciarAgen:hover {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.578);
+}
+
 #listaPai {
     padding-left: 8%;
     padding-top: 2%;
     width: 40%;
+    cursor: default;
 }
 
 span {
     font-size: 18px;
     color: #050539;
+    cursor: pointer;
 }
 
 
@@ -204,4 +229,81 @@ footer {
     text-align: center;
     color: white;
     font-size: 18px;
+}
+
+
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+    position: fixed;
+    top: 10%;
+    right: 0px;
+    z-index: 9;
+}
+
+#txtLogin {
+    padding: 5%;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #050539;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.578);
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #C6C5CD;
+    border-radius: 5px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #37327C;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+#btnEntrar{
+    margin-left: 180px;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: #050539;
+    float: right;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
 }
