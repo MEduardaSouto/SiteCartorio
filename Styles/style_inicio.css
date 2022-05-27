@@ -163,15 +163,16 @@ ul.lista li:last-child:before {
     padding-top: 20px;
     color: #050539;
     cursor: default;
+    line-height: 22px;
 }
 #BtIniciarAgen {
     background-color: #37327C;
     float: right;
-    margin-right: 15px;
+    margin-right: 10px;
     width: 37%;
     height: 25px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5px;
     border: none;
     color: white;
     border-radius: 5px;
@@ -183,13 +184,18 @@ ul.lista li:last-child:before {
 #listaPai {
     padding-left: 8%;
     padding-top: 2%;
-    width: 40%;
+    width: 60%;
     cursor: default;
 }
 span {
     font-size: 18px;
     color: #050539;
     cursor: pointer;
+    line-height: 30px
+}
+
+#aoLado{
+    float: right;
 }
 
 

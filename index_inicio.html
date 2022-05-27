@@ -15,7 +15,8 @@
 
 <body>
 
-  <header> <!--cabeçalho-->
+  <header>
+    <!--cabeçalho-->
     <button id="btnLogin" onclick="openForm()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
         fill="currentColor" class="bi bi-person-circle" id="login" viewBox="0 0 16 16">
         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -26,12 +27,15 @@
     <a class="inicio" href="  ">INÍCIO</a>
   </header>
 
-  <div class="form-popup" id="myForm"> <!--pop-out login-->
+  <div class="form-popup" id="myForm">
+    <!--pop-out login-->
     <form action="/action_page.php" class="form-container">
-      <button type="button" class="btn cancel" onclick="closeForm()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-      </svg></button>
+      <button type="button" class="btn cancel" onclick="closeForm()"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+          height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+        </svg></button>
 
       <div id="txtLogin">LOGIN</div>
       <input type="text" placeholder="CPF" name="CPF" required>
@@ -40,7 +44,8 @@
     </form>
   </div>
 
-  <nav> <!--logo/municípios-->
+  <nav>
+    <!--logo/municípios-->
     <div id="elementosNav">
       <img id="logo" src="imagens/logo">
       <div id="txt">
@@ -56,7 +61,8 @@
     </div>
   </nav>
 
-  <section> <!--Corpo da página-->
+  <section>
+    <!--Corpo da página-->
     <div id="container">
       <h1>SERVIÇOS</h1>
     </div>
@@ -68,18 +74,21 @@
         <ul>
           <li id="listaPai">
 
-            <span palmeiras > <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            <!--Registro Civil das Pessoas Naturais-->
+
+            <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
               </svg> Registro de Nascimento. (Certidão comum ou inteiro teor) </span>
             <ul style="display: none;">
               <li id="listaFilha">
-                Documentação necessária: <a href="imagens/Documentação.pdf" style="color: #050539;" download> Clique
+                Documentação necessária: <a href="imagens/Documentação.pdf"
+                  style="color: #050539; text-decoration: underline;" download> Clique
                   para baixar o arquivo </a> <br>
                 Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais <br>
-                Localização do cartório: Rua num sei oque das quantas <br>
-                Horário de funcionamento: 07:00 ás 20:00 <br>
+                Localização do cartório:<br>
+                Horário de funcionamento:<br>
                 <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
               </li>
             </ul>
@@ -89,11 +98,11 @@
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg> Ainda será preenchido</span>
+              </svg> Registro de casamento</span>
             <ul style="display: none;">
               <li id="listaFilha">
                 Documentação necessária: <br>
-                Cartório que oferta esse serviço: <br>
+                Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais <br>
                 Localização do cartório: <br>
                 Horário de funcionamento: <br>
                 <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
@@ -101,12 +110,245 @@
             </ul>
             <br>
 
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Registro de óbitos (Certidão comum ou de inteiro teor)</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais<br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
 
             <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg> Ainda será preenchido</span>
+              </svg> Buscas de registros</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais<br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Registro de emancipações e interdições</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais<br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Atos acessórios relativos a todos os serviços citados acima: averbações de separações, divórcios,
+              óbitos e casamentos</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais<br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Processos de registro tardio e restauração de primeiro registro de nascimento</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais<br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Reconhecimento de paternidade</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais<br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+
+
+
+            <!--PROTESTO DE TÍTULOS-->
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Receber pagamento de títulos e outros documentos de dívida</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Protesto de contratos de compromisso ou promessa de compra e venda, promessa de cessão ou cessão de
+              direitos</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Protesto de contrato de locação de veículo</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Protesto de letra de câmbio, nota promissória, duplicata, debênture ou cheque</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Protesto do documento particular que origine uma dívida</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Cancelamento de Título Protestado</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Lavrar e registrar o protesto ou acatar a desistência do credor</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Proceder às averbações</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Prestar informações e fornecer certidões relativas a todos os atos praticados</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+
+
+            <!--TABELIONATO DE NOTAS-->
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Reconhecimento de assinatura (reconhecer firma aberta)</span>
             <ul style="display: none;">
               <li id="listaFilha">
                 Documentação necessária: <br>
@@ -122,7 +364,7 @@
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg> Ainda será preenchido</span>
+              </svg> Reconhecimento de sinal público</span>
             <ul style="display: none;">
               <li id="listaFilha">
                 Documentação necessária: <br>
@@ -138,7 +380,100 @@
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg> Ainda será preenchido</span>
+              </svg> Testamentos cerrados ou públicos</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de atos registrados no próprio Cartório</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Abertura de ficha de Assinatura (abrir firma)</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Autenticação (cópia autenticada)</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Procuração Pública para todos os fins</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br><br>
+
+
+            <span style="padding-left: 5px; font-weight: bold; cursor: default">ESCRITURAS:</span><br><br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Pacto Antenupcial</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Emancipação</span>
             <ul style="display: none;">
               <li id="listaFilha">
                 Documentação necessária: <br>
@@ -154,7 +489,52 @@
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg> Ainda será preenchido</span>
+              </svg> Dissolução de Sociedade</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Reconhecimento de Paternidade</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> União Estável</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Declaração</span>
             <ul style="display: none;">
               <li id="listaFilha">
                 Documentação necessária: <br>
@@ -170,7 +550,22 @@
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg> Ainda será preenchido</span>
+              </svg> Doação</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Compra e Venda</span>
             <ul style="display: none;">
               <li id="listaFilha">
                 Documentação necessária: <br>
@@ -186,7 +581,7 @@
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg> Ainda será preenchido</span>
+              </svg> Separação ou Divórcio</span>
             <ul style="display: none;">
               <li id="listaFilha">
                 Documentação necessária: <br>
@@ -196,13 +591,12 @@
                 <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
             </ul>
             <br>
-
 
             <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg> Ainda será preenchido</span>
+              </svg> Inventário e Partilha</span>
             <ul style="display: none;">
               <li id="listaFilha">
                 Documentação necessária: <br>
@@ -211,14 +605,16 @@
                 Horário de funcionamento: <br>
                 <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
             </ul>
-            <br>
+            <br><br>
 
+
+            <span style="padding-left: 5px; font-weight: bold; cursor: default;">ATAS NOTARIAIS:</span><br><br>
 
             <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg> Ainda será preenchido</span>
+              </svg> Fins diversos</span>
             <ul style="display: none;">
               <li id="listaFilha">
                 Documentação necessária: <br>
@@ -228,13 +624,29 @@
                 <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
             </ul>
             <br>
-
 
             <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
-              </svg> Ainda será preenchido</span>
+              </svg> Para fins de Usucapião</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br><br>
+
+
+            <!--REGISTRO DE IMÓVEIS E HIPOTECAS-->
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Usufruto</span>
             <ul style="display: none;">
               <li id="listaFilha">
                 Documentação necessária: <br>
@@ -245,12 +657,581 @@
             </ul>
             <br>
 
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Usucapião</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Doação</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Benfeitorias</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Hipotecas</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidões de atos registrados</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Averbações</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Penhoras</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Permutas</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Matrícula do imóvel</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de Ônus Reais</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão Trintenária</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Matrícula de Imóvel Atualizada mais Ônus Reais</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de Transcrição de Imóvel mais Ônus Reais</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Matrícula de Imóvel Atualizada mais Certidão de Ônus Reais e Ações Reipersecutórias</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão em Inteiro Teor do Imóvel mais Ônus Reais</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Matrícula de Imóvel Atualizada mais Ônus Reais e Ações Reipersecutórias</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Matrícula de Imóvel Atualizada mais Ônus Reais e Ações Reipersecutórias</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de Ônus Reais mais Ações Reais e Pessoais Reipersecutórias</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão Negativa de Bens do Casal ou Sócios</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de Inteiro Teor do Imóvel</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão Dominial</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão em Inteiro Teor do Imóvel</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de Ações Reais e Pessoais Reipersecutórias</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão Negativa de Bens do casal</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de Transcrição de Imóvel</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão Negativa de Bens</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Matrícula de Imóvel Atualizada</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Conservação de documentos e Registro de contratos em geral</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Atos administrativos judiciais</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de Busca de Títulos e Documentos de Pessoa Jurídica</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de Títulos e Documentos de Atos Constitutivos</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de Títulos e Documentos Resumida</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão Negativa de Regimento Interno de Condomínio</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de Títulos e Documentos em Inteiro Teor</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Certidão de Busca de Títulos e Documentos</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Registro de sociedade civil</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Registrar alterações contratuais, estatutárias, atas, balanços, livros contábeis ou de atas</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
+
+            <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+              </svg> Registro de fundação, estatuto, atas e dissolução de sociedades civis, religiosas, científicas,
+              políticas, de notícias</span>
+            <ul style="display: none;">
+              <li id="listaFilha">
+                Documentação necessária: <br>
+                Cartório que oferta esse serviço: <br>
+                Localização do cartório: <br>
+                Horário de funcionamento: <br>
+                <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+            </ul>
+            <br>
 
           </li>
 
           </li>
         </ul>
-
 
 
       </ul>
@@ -262,7 +1243,8 @@
     </div>
   </section>
 
-  <footer> <!--Rodapé-->
+  <footer>
+    <!--Rodapé-->
     <div id="elementosRodapé">
       Cartórios Francisco da Motta | Agradecemos sua visita
     </div>
