@@ -4,6 +4,7 @@ function redirecionar() {
     window.location.assign()
 }
 
+
 document.querySelectorAll('[palmeiras]').forEach(folder => {
     folder.onclick = function (e) {
         const ul = folder.nextElementSibling
@@ -16,11 +17,9 @@ document.querySelectorAll('[palmeiras]').forEach(folder => {
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
-
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
-
 closeForm();
 
 
