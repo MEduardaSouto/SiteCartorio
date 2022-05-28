@@ -109,6 +109,7 @@ nav {
   
 #bta:hover{
     box-shadow: 0px -3px 30px rgba(0, 0, 0, 0.578);
+    cursor: pointer;
 }
 
 #btnNselecionado:hover {
