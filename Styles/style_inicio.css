@@ -89,6 +89,28 @@ nav {
     font-size: 26px;
     font-family: 'Times New Roman', Times, serif;
 }
+.seta{
+    transform: rotate(45deg) scale(1.08);
+}
+#bta {
+    background: #050530;
+    color: #050539;
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+    height: 76px;
+    width: 14%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: #000000;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+  
+#bta:hover{
+    box-shadow: 0px -3px 30px rgba(0, 0, 0, 0.578);
+}
+
 #btnNselecionado:hover {
     box-shadow: 0px -3px 30px rgba(0, 0, 0, 0.578);
 }
@@ -242,7 +264,7 @@ footer {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.578);
-    background-blend-mode
+    
 }
 
 .form-container input[type=text],
@@ -254,6 +276,7 @@ footer {
     background: #C6C5CD;
     border-radius: 5px;
 }
+
 
 .form-container input[type=text]:focus,
 .form-container input[type=password]:focus {
@@ -288,4 +311,32 @@ footer {
 }
 
 
+    .Escrituras {
+    margin-left: 120%;
+    margin-top: -73%;
+    
+    width: 30%;
+    
+    
+    
+    
+}
 
+    .Notarias {
+        margin-left: 120%;
+        margin-top: 0%;
+        
+        width: 30%;
+        
+
+    }
+
+    .hipotecas {
+        padding-top: 41.9%;
+    }
+
+    .lista1{
+        width: 70%;
+    }
+
+   
