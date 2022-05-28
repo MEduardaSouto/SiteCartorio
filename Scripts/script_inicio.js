@@ -1,4 +1,5 @@
 const login = document.getElementById("login");
+const seta = document.querySelectorAll(".seta")
 
 function redirecionar() {
     window.location.assign()
@@ -10,7 +11,10 @@ document.querySelectorAll('[palmeiras]').forEach(folder => {
         const ul = folder.nextElementSibling
         const d = ul.style.display
         ul.style.display = d === 'none' ? 'block' : 'none'
+
+        seta.setAttribute("transform", "rotate(90)");
     }
+
 })
 
 

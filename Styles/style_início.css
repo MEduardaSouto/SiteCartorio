@@ -4,6 +4,13 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.setaAtiva{
+    transform: rotate(90deg);
+}
+.setaNativa{
+    transform: rotate(0deg);
+}
+
 
 /*cabeçalho*/
 header {
@@ -12,6 +19,7 @@ header {
     height: 10%;
     position: fixed;
 }
+
 .localização,
 .inicio {
     padding-left: 40px;
@@ -21,6 +29,7 @@ header {
     float: right;
     padding-top: 22px;
 }
+
 #btnLogin {
     float: right;
     padding-left: 40px;
@@ -41,16 +50,19 @@ nav {
     width: 100%;
     padding-top: 100px;
 }
+
 #elementosNav {
     height: 200px;
     width: 100%;
 }
+
 #logo {
     width: 370px;
     float: left;
     padding-right: 200px;
     padding-left: 80px;
 }
+
 #txt {
     color: white;
     font-size: 36px;
@@ -58,10 +70,12 @@ nav {
     padding-top: 65px;
     font-weight: bold
 }
+
 #btnCidades {
     padding-top: 74px;
     text-align: center;
 }
+
 #btnNselecionado {
     margin-left: 4.5%;
     margin-right: 4.5%;
@@ -76,6 +90,7 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
 }
+
 #btnSelecionado {
     background: #EEEDF5;
     color: #050539;
@@ -89,9 +104,8 @@ nav {
     font-size: 26px;
     font-family: 'Times New Roman', Times, serif;
 }
-.seta{
-    transform: rotate(45deg) scale(1.08);
-}
+
+
 #bta {
     background: #050530;
     color: #050539;
@@ -104,10 +118,10 @@ nav {
     border: #000000;
     font-size: 26px;
     font-family: 'Times New Roman', Times, serif;
-    
+
 }
-  
-#bta:hover{
+
+#bta:hover {
     box-shadow: 0px -3px 30px rgba(0, 0, 0, 0.578);
     cursor: pointer;
 }
@@ -129,6 +143,7 @@ nav {
     margin-top: 110px;
     box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.578);
 }
+
 h1 {
     padding-left: 3%;
     padding-top: 28px;
@@ -139,42 +154,7 @@ h1 {
 
 
 /*ListadeSerciçosPalmeiras*/
-.lista * {
-    list-style-type: none;
-}
-.lista li:hover {
-    cursor: pointer;
-}
-.lista li a {
-    color: rgb(252, 252, 252);
-    text-decoration: solid;
-    font-size: 16px;
-    border-radius: 7px;
-    padding-top: 6px;
-}
-.lista ul {
-    padding-left: 25px;
-}
-ul.lista,
-.lista li {
-    padding-left: 0px;
-    padding-top: 5px;
-}
-ul.lista,
-ul.lista ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-ul.lista ul {
-    margin-left: 10px;
-}
-ul.lista li:last-child {
-    border-left: none;
-}
-ul.lista li:last-child:before {
-    border-left: 1px solid rgb(100, 100, 100);
-}
+
 #listaFilha {
     margin-top: 15px;
     background-color: #DCDBE5;
@@ -187,7 +167,10 @@ ul.lista li:last-child:before {
     color: #050539;
     cursor: default;
     line-height: 22px;
+    list-style:none;
+    font-size: 16px;
 }
+
 #BtIniciarAgen {
     background-color: #37327C;
     float: right;
@@ -201,15 +184,11 @@ ul.lista li:last-child:before {
     border-radius: 5px;
     cursor: pointer;
 }
+
 #BtIniciarAgen:hover {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.578);
 }
-#listaPai {
-    padding-left: 8%;
-    padding-top: 2%;
-    width: 60%;
-    cursor: default;
-}
+
 span {
     font-size: 18px;
     color: #050539;
@@ -217,8 +196,10 @@ span {
     line-height: 30px
 }
 
-#aoLado{
-    float: right;
+.registroCivil, .notas, .protesto, .hipotecas, .jurídicas{
+    padding-left: 150px;
+    padding-top: 40px;
+    font-size: x-large;
 }
 
 
@@ -265,7 +246,7 @@ footer {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.578);
-    
+
 }
 
 .form-container input[type=text],
@@ -297,7 +278,7 @@ footer {
     border-radius: 5px;
 }
 
-#btnEntrar{
+#btnEntrar {
     margin-left: 180px;
 }
 
@@ -312,32 +293,3 @@ footer {
 }
 
 
-    .Escrituras {
-    margin-left: 120%;
-    margin-top: -73%;
-    
-    width: 30%;
-    
-    
-    
-    
-}
-
-    .Notarias {
-        margin-left: 120%;
-        margin-top: 0%;
-        
-        width: 30%;
-        
-
-    }
-
-    .hipotecas {
-        padding-top: 41.9%;
-    }
-
-    .lista1{
-        width: 70%;
-    }
-
-   
