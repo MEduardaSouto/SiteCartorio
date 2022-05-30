@@ -175,10 +175,9 @@ footer {
     
 }
 
-.registroCivil{
+.registroCivil, .notas, .protesto, .hipotecas, .jurídicas{
     padding-left: 70px;
-    padding-bottom: 50px;
-    padding-top: 20px;
+    padding-bottom: 25px;
     font-size: 18px;
     line-height: 30px
 }

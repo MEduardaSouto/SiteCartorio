@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styles/style_usuário.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
+    <link rel="icon" type="imagem/png" href="imagens/logo2.jpg" />
+    <title>Cartórios Franciso da Motta</title>
+</head>
+
+<body>
+
+    <header>
+        <!--cabeçalho-->
+        <button id="btnLogin" onclick="openForm()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                fill="currentColor" class="bi bi-person-circle" id="login" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+            </svg></button>
+        <a class="localização" href="Index_Palmeiras.html">LOCALIZAÇÃO</a>
+        <a class="inicio" href="Index_Palmeiras.html">INÍCIO</a>
+    </header>
+
+
+
+    <section>
+        <!--Corpo do texto-->
+
+        <div id="container">
+            <h1>Olá, Usuário!</h1>
+        </div>
+
+        <div id="seleção">
+            <a href="index_usuário.html"><button id="btnNselecionado">STATUS DE AGENDAMENTO</button></a>
+            <button id="btnSelecionado">INICIAR NOVO AGENDAMENTO</button>
+        </div>
+
+        <div id="container2">
+
+            <select id="municípios">
+                <option value="pal">PALMEIRAS</option>
+                <option value="caeté">CAETÉ AÇU</option>
+                <option value="mucu">MUCUGÊ</option>
+                <option value="ira">IRAQUARA</option>
+            </select><br>
+
+            <section>
+                <div class="registroCivil">
+                    <span style="padding-left: 5px; font-weight: bold; cursor: default">REGISTRO CIVIL DAS PESSOAS
+                        NATURAIS:</span><br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                                style="padding-right: 8px;" class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                            </svg>Atos acessórios relativos a todos os serviços citados abaixo: averbações de separações,
+                            divórcios, óbitos e casamentos</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Buscas de registros</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Processos de registro tardio e restauração de primeiro registro de nascimento</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Reconhecimento de paternidade</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Registro de casamento</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Registro de emancipações e interdições</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Registro de nascimento. (Certidão comum ou de inteiro teor)</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Registro de óbitos. (Certidão comum ou de inteiro teor)</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                </div>
+        
+                <div class="notas">
+                    <span style="padding-left: 5px; font-weight: bold; cursor: default">NOTAS:</span><br>
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Abertura de ficha de Assinatura (abrir firma)</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Atas notariais para de Usucapião</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Atas notariais para fins diversos</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Autenticação (cópia autenticada)</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de atos registrados no próprio Cartório</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Compra e Venda</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Declaração</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Dissolução de Sociedade</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Doação</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Emancipação</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Inventário e Partilha</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Pacto Antenupcial</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Procuração Pública para todos os fins</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Reconhecimento de assinatura (reconhecer firma aberta)</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Reconhecimento de Paternidade</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Reconhecimento de sinal público</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Separação ou Divórcio</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Testamentos cerrados ou públicos</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>União Estável</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <br>
+                            Cartório que oferta esse serviço: <br>
+                            Localização do cartório: <br>
+                            Horário de funcionamento: <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                    </ul>
+                    <br>
+        
+                </div>
+        
+                <div class="protesto">
+                    <span style="padding-left: 5px; font-weight: bold; cursor: default">PROTESTO:</span><br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Cancelamento de Título Protestado</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Lavrar e registrar o protesto ou acatar a desistência do credor</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Prestar informações e fornecer certidões relativas a todos os atos praticados</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Proceder às averbações</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Protesto de contrato de locação de veículo</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Protesto de contratos de compromisso ou promessa de compra e venda, promessa de cessão ou cessão
+                        de direitos</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Protesto de letra de câmbio, nota promissória, duplicata, debênture ou cheque</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Protesto do documento particular que origine uma dívida</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Receber pagamento de títulos e outros documentos de dívida</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                </div>
+        
+                <div class="hipotecas">
+                    <span style="padding-left: 5px; font-weight: bold; cursor: default">HIPOTECAS:</span><br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Averbações</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Benfeitorias</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de Ações Reais e Pessoais Reipersecutórias</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de Inteiro Teor do Imóvel</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de Ônus Reais mais Ações Reais e Pessoais Reipersecutórias</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de Ônus Reais</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de Transcrição de Imóvel mais Ônus Reais</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de Transcrição de Imóvel</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão Dominial</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão em Inteiro Teor do Imóvel mais Ônus Reais</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão em Inteiro Teor do Imóvel</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão Negativa de Bens do Casal ou Sócios</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão Negativa de Bens do casal</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão Negativa de Bens</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão Trintenária</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidões de atos registrados</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Doação</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Hipotecas</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Matrícula de Imóvel Atualizada mais Certidão de Ônus Reais e Ações Reipersecutórias</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Matrícula de Imóvel Atualizada mais Ônus Reais e Ações Reipersecutórias</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Matrícula de Imóvel Atualizada mais Ônus Reais</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Matrícula de Imóvel Atualizada</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Matrícula do imóvel</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Penhoras</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Permutas</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Usucapião</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Usufruto</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                </div>
+        
+                <div class="jurídicas">
+                    <span style="padding-left: 5px; font-weight: bold; cursor: default">JURÍDICAS:</span><br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Atos administrativos judiciais</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de Busca de Títulos e Documentos de Pessoa Jurídica</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de Busca de Títulos e Documentos</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de Títulos e Documentos de Atos Constitutivos</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de Títulos e Documentos em Inteiro Teor</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão de Títulos e Documentos Resumida</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Certidão Negativa de Regimento Interno de Condomínio</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Conservação de documentos e Registro de contratos em geral</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Registrar alterações contratuais, estatutárias, atas, balanços, livros contábeis ou de atas</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Registro de fundação, estatuto, atas e dissolução de sociedades civis, religiosas, científicas,
+                        políticas, de notícias</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                    <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
+                            style="padding-right: 8px; " class="bi bi-chevron-right" class="seta" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                        </svg>Registro de sociedade civil</span>
+                    <ul style="display: none;">
+                        <li id="listaFilha">
+                            Documentação necessária: <a href="imagens/Documentação.pdf"
+                                style="color: #050539; text-decoration: underline;" download> Clique
+                                para visualizar o arquivo </a> <br>
+                            Cartório que oferta esse serviço: Cartório de registro civil das pessoas naturais
+                            <br>
+                            Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro <br>
+                            Corário de funcionamento:07:00 ás 13:00 <br>
+                            <button id="BtIniciarAgen">INICIAR AGENDAMENTO</button>
+                        </li>
+                    </ul>
+                    <br>
+        
+                </div>
+            </section>
+        </div>
+    </section>
+    <br>
+
+
+    <footer>
+        <!--Rodapé-->
+        <div id="elementosRodapé">
+            Cartórios Francisco da Motta | Agradecemos sua visita
+        </div>
+    </footer>
+
+</body>
+
+</html>
