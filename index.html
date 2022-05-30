@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="Styles/style_início.css" media="screen" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
     <script src="Scripts/script_inicio.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="icon" type="imagem/png" href="imagens/logo2.jpg" />
     <title>Cartórios Franciso da Motta</title>
 </head>
@@ -22,8 +23,8 @@
                 <path fill-rule="evenodd"
                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
             </svg></button>
-        <a class="localização" href="index_usuário.html">LOCALIZAÇÃO</a>
-        <a class="inicio" href="index_adm.html">INÍCIO</a>
+        <a id="localização" href="index_usuário.html">LOCALIZAÇÃO</a>
+        <a id="inicio" class="scrollToTop" href="index_adm.html">INÍCIO</a>
     </header>
 
     
@@ -40,8 +41,7 @@
             <div id="txtLogin">LOGIN</div>
             <input type="text" placeholder="CPF" name="CPF" required>
             <input type="password" placeholder="SENHA" name="psw" required>
-            <button id="btnEntrar" class="btn">ENTRAR</button>
-
+            <a href="https://eduardasouto28.github.io/RiseUp/index_usu%C3%A1rio.html"><button id="btnEntrar" class="btn">ENTRAR</button></a>
         </form>
     </div>
 

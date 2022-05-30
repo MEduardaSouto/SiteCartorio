@@ -1,12 +1,10 @@
+
 function redirecionar() {
     window.location.assign()
 }
 
 
-
-
-
-
+/*descer inoformações dos serviços */
 const seta = document.querySelectorAll(".seta")
 
 document.querySelectorAll('[palmeiras]').forEach(folder => {
@@ -19,29 +17,20 @@ document.querySelectorAll('[palmeiras]').forEach(folder => {
 
 
 
-
-
-
-const login = document.getElementById("login");
-const btnEntrar = document.getElementById("btnEntrar")
-
+/*popup login */
 function openForm() {
     document.getElementById("myForm").style.display = "block";
 }
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
-function redirecionarUsuário(){
-    window.location.href = " ";
-}
-btnEntrar.onclick = redirecionarUsuário;
 closeForm();
 
 
 
 
 
-
+/*mudar de municípios */
 const btnP = document.getElementById("btnPalmeiras");
 const btnM = document.getElementById("btnMucugê");
 const btnI = document.getElementById("btnIraquara");
@@ -131,6 +120,18 @@ function Caeté() {
     btnI.classList.add('btnNselecionado');
 }
 btnC.onclick = Caeté;
+
+
+
+/*rolar página para  início */
+$(document).ready(function(){
+
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+
+});
 
 
 
