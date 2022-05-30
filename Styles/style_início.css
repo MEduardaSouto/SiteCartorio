@@ -76,7 +76,7 @@ nav {
     text-align: center;
 }
 
-#btnNselecionado {
+.btnNselecionado {
     margin-left: 4.5%;
     margin-right: 4.5%;
     height: 76px;
@@ -91,7 +91,7 @@ nav {
     cursor: pointer;
 }
 
-#btnSelecionado {
+.btnSelecionado {
     background: #EEEDF5;
     color: #050539;
     margin-left: 4.5%;
@@ -118,7 +118,6 @@ nav {
     border: #000000;
     font-size: 26px;
     font-family: 'Times New Roman', Times, serif;
-
 }
 
 #bta:hover {
@@ -126,7 +125,7 @@ nav {
     cursor: pointer;
 }
 
-#btnNselecionado:hover {
+.btnNselecionado:hover {
     box-shadow: 0px -3px 30px rgba(0, 0, 0, 0.578);
 }
 

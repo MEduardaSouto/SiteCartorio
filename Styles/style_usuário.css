@@ -71,7 +71,7 @@ h1{
     text-align: center;
     padding: 40px;
 }
-#btnSelecionado{
+.btnSelecionado{
     background: #050539;
     color: #ffffff;
     border: none;
@@ -81,7 +81,7 @@ h1{
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
 }
-#btnNselecionado{
+.btnNselecionado{
     background: #DCDBE5;
     color: #050539;
     border: none;
@@ -93,7 +93,7 @@ h1{
     cursor: pointer;
 }
 
-#btnNselecionado:hover{
+.btnNselecionado:hover{
     box-shadow: 0px 0px 15px rgba(83, 83, 83, 0.578);
 }
 
