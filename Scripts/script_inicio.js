@@ -34,10 +34,9 @@ const btnI = document.getElementById("btnIraquara");
 const btnC = document.getElementById("btnCaeté");
 
 
-const cart = document.querySelectorAll("div.cartórios");
-const localiza = document.querySelectorAll("div.localizaçãoCartório");
-const hr = document.querySelectorAll("div.horário");
-
+const cart = document.body.querySelectorAll("div.cartórios");
+const localiza = document.body.querySelectorAll("div.localizaçãoCartório");
+const hr = document.body.querySelectorAll("div.horário");
 
 
 function Mucugê() {

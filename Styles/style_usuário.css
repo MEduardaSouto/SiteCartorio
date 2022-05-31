@@ -164,20 +164,64 @@ footer {
 }
 
 
+/*ListadeSerciçosPalmeiras*/
 #municípios{
     margin-left: 50px;
     margin-top: 50px;
     border-radius: 10px;
-    width: 200px;
-    height: 30px;
+    width: 250px;
+    height: 35px;
     padding-left: 10px;
     cursor: pointer;
-    
+    background-color: #F8F8F8;
 }
 
 .registroCivil, .notas, .protesto, .hipotecas, .jurídicas{
-    padding-left: 70px;
+    padding-left: 50px;
     padding-bottom: 25px;
     font-size: 18px;
     line-height: 30px
 }
+
+
+#listaFilha {
+    margin-top: 15px;
+    background-color: #F8F8F8;
+    width: 550px;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.578);
+    padding-left: 25px;
+    padding-top: 15px;
+    color: #050539;
+    cursor: default;
+    line-height: 22px;
+    list-style:none;
+    font-size: 16px;
+}
+
+#BtIniciarAgen {
+    background-color: #37327C;
+    float: right;
+    margin-right: 10px;
+    width: 37%;
+    height: 25px;
+    text-align: center;
+    margin-top: 5px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#BtIniciarAgen:hover {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.578);
+}
+
+span {
+    font-size: 17px;
+    color: #050539;
+    cursor: pointer;
+    line-height: 30px
+}
+
