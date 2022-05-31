@@ -127,4 +127,18 @@ footer {
     color: white;
     font-size: 18px;
 }
+.informes {
+    width: auto;
+    height: 180px;
+    border-radius: 8.39px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    color: rgba(14, 13, 13, 0.884);
+    list-style: none;
+    font-size: 15px;
+    height: auto;
 
+
+}
