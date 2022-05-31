@@ -33,6 +33,13 @@ const btnM = document.getElementById("btnMucugê");
 const btnI = document.getElementById("btnIraquara");
 const btnC = document.getElementById("btnCaeté");
 
+
+const cart = document.querySelectorAll("div.cartórios");
+const localiza = document.querySelectorAll("div.localizaçãoCartório");
+const hr = document.querySelectorAll("div.horário");
+
+
+
 function Mucugê() {
     document.querySelector(".notas").style.display = "block";
     document.querySelector(".protesto").style.display = "block";
@@ -50,6 +57,18 @@ function Mucugê() {
     btnP.classList.add('btnNselecionado');
     btnC.classList.add('btnNselecionado');
     btnI.classList.add('btnNselecionado');
+
+    cart.innerHTML = "";
+    const txtMC = document.createTextNode("Cartório que oferta esse serviço: ");
+    cart.appendChild(txtMC);
+
+    localiza.innerHTML = "";
+    const txtML = document.createTextNode("Localização do cartório: Travessa Rua da Várzea, Galeria Sala 1, Cidade Histórica");
+    localiza.appendChild(txtML);
+
+    hr.innerHTML = "";
+    const txtMH = document.createTextNode("Horário de funcionamento: 07 às 13hr");
+    hr.appendChild(txtMH);
 
 }
 btnM.onclick = Mucugê;
@@ -73,6 +92,18 @@ function Palmeiras() {
     btnC.classList.add('btnNselecionado');
     btnI.classList.add('btnNselecionado');
 
+    cart.innerHTML = "";
+    const txtPC = document.createTextNode("Cartório que oferta esse serviço: ");
+    cart.appendChild(txtPC);
+
+    localiza.innerHTML = "";
+    const txtPL = document.createTextNode("Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro");
+    localiza.appendChild(txtPL);
+
+    hr.innerHTML = "";
+    const txtPH = document.createTextNode("Horário de funcionamento: 08 às 14hr");
+    hr.appendChild(txtPH);
+    
 }
 btnP.onclick = Palmeiras;
 
@@ -94,6 +125,19 @@ function Iraquara() {
     btnP.classList.add('btnNselecionado');
     btnC.classList.add('btnNselecionado');
     btnM.classList.add('btnNselecionado');
+
+    cart.innerHTML = "";
+    const txtIC = document.createTextNode("Cartório que oferta esse serviço: ");
+    cart.appendChild(txtIC);
+
+    localiza.innerHTML = "";
+    const txtIL = document.createTextNode("Localização do cartório: RO BR 122, s/n, centro");
+    localiza.appendChild(txtIL);
+
+    hr.innerHTML = "";
+    const txtIH = document.createTextNode("Horário de funcionamento: 08 às 14hr");
+    hr.appendChild(txtIH);
+
 }
 btnI.onclick = Iraquara;
 
@@ -115,6 +159,18 @@ function Caeté() {
     btnP.classList.add('btnNselecionado');
     btnM.classList.add('btnNselecionado');
     btnI.classList.add('btnNselecionado');
+
+    cart.innerHTML = "";
+    const txtCC = document.createTextNode("Cartório que oferta esse serviço: ");
+    cart.appendChild(txtCC);
+
+    localiza.innerHTML = "";
+    const txtCL = document.createTextNode("Localização do cartório: Rua dos Gatos, s/n, Galeria Empório do Vale, Sala 1");
+    localiza.appendChild(txtCL);
+
+    hr.innerHTML = "";
+    const txtCH = document.createTextNode("Horário de funcionamento: 08 às 14hr");
+    hr.appendChild(txtCH);
 }
 btnC.onclick = Caeté;
 
