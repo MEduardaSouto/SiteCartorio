@@ -4,7 +4,8 @@ document.querySelector(".agendamento").style.display = "none";
 
 
 function novoAgendamento(){
-    document.querySelector('table').style.display = "none"
+
+    document.getElementById("tabela").style.display = "none"
 
     document.querySelector(".agendamento").style.display = "block"
 
@@ -17,7 +18,8 @@ function novoAgendamento(){
 btnAgendar.onclick= novoAgendamento;
 
 function statusAgendamentos (){
-    document.querySelector('table').style.display = "block"
+
+    document.querySelector('#tabela').style.display = "block"
 
     document.querySelector(".agendamento").style.display = "none"
 
@@ -38,11 +40,6 @@ document.querySelectorAll('[palmeiras]').forEach(folder => {
     }
 })
 
-const PS = document.getElementById("pSeleção");
 
-function aa(){
-    alert("oi");
-}
-PS.onclick = aa;
 
 

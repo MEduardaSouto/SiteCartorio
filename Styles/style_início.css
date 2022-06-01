@@ -4,10 +4,11 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.setaAtiva{
+.setaAtiva {
     transform: rotate(90deg);
 }
-.setaNativa{
+
+.setaNativa {
     transform: rotate(0deg);
 }
 
@@ -150,6 +151,24 @@ h1 {
     font-weight: bold
 }
 
+#valores{
+    margin-top: 50px;
+    margin-right: 115px;
+    background-color: #312E59;
+    color: white;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+#valores:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.578);
+}
+
 
 
 /*ListadeSerciçosPalmeiras*/
@@ -158,15 +177,15 @@ h1 {
     margin-top: 15px;
     background-color: #DCDBE5;
     width: 550px;
-    height: 130px;
+    height: 115px;
     border-radius: 10px;
     box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.578);
     padding-left: 25px;
     padding-top: 20px;
     color: #050539;
     cursor: default;
-    line-height: 22px;
-    list-style:none;
+    line-height: 25px;
+    list-style: none;
     font-size: 16px;
 }
 
@@ -195,10 +214,47 @@ span {
     line-height: 30px
 }
 
-.registroCivil, .notas, .protesto, .hipotecas, .jurídicas{
+span:hover{
+    color:#1206b8;
+}
+
+.registroCivil,
+.notas,
+.protesto,
+.hipotecas,
+.jurídicas {
     padding-left: 150px;
     padding-top: 40px;
     font-size: x-large;
+}
+
+/*email*/
+
+#email_mapa{
+    margin-left: 135px;
+    margin-top: 60px;
+}
+
+#email{
+    margin: 20px;
+    background-color: #DCDBE5;
+    border-radius: 3px;
+    box-shadow: 0px 5px 3px rgba(48, 48, 48, 0.578);
+    border: none;
+    width: 510px;
+    height: 36px;
+    padding-left: 10px;
+}
+
+#mensagem{
+    margin: 20px;
+    margin-top: 5px;
+    background-color: #DCDBE5;
+    border: none;
+    box-shadow: 0px 5px 3px rgba(48, 48, 48, 0.578);
+    padding-left: 10px;
+    width: 510px;
+    height: 135px;
 }
 
 
@@ -290,5 +346,3 @@ footer {
 .open-button:hover {
     opacity: 1;
 }
-
-

@@ -43,8 +43,8 @@ section{
     
 }
 #container {
-    height: 98px;
-    width: 85%;
+    height: 82.22px;
+    width: 75%;
     background-color: #312E59;
     border-radius:10px;
     color: white;
@@ -55,13 +55,13 @@ section{
 }
 h1{
     padding-left: 3%;
-    padding-top: 28px;
+    padding-top: 20px;
     font-size: 36px;
     font-weight: bold
 }
 #texto{
     color: #312E59;
-    margin-left: 7.5%;
+    margin-left: 12.5%;
     padding-top: 25px;
     font-weight: bold;
 }
@@ -99,7 +99,7 @@ h1{
 
 #container2{
     height: auto;
-    width: 85%;
+    width: 75%;
     background-color: #DCDBE5;
     border-radius: 8.39px;
     margin-left: auto;
@@ -115,14 +115,14 @@ tr{
 }
 th{
     color: #050539;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 td{
     text-align: center;
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 20px;
-    font-size: large; 
+    margin-bottom: 20px; 
     border-radius: 8.39px;
     background-color: white;
     padding: 10px;
@@ -147,6 +147,21 @@ td{
 .concluida{
     color: #33b838;
 }
+
+.informes {
+    height: 150px;
+    border-radius: 8.39px;
+    margin-left: 15px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    background-color: white;
+    color: rgba(14, 13, 13, 0.884);
+    list-style: none;
+    font-size: 15px;
+    width: 994px;
+}
+
 
 /*rodapé*/
 footer {
@@ -188,7 +203,7 @@ footer {
     margin-top: 15px;
     background-color: #F8F8F8;
     width: 550px;
-    height: 130px;
+    height: 110px;
     border-radius: 10px;
     box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.578);
     padding-left: 25px;
