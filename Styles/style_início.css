@@ -190,7 +190,7 @@ h1 {
 }
 
 #BtIniciarAgen {
-    background-color: #37327C;
+    background-color: #312E59;
     float: right;
     margin-right: 10px;
     width: 37%;
@@ -226,6 +226,10 @@ span:hover{
     padding-left: 150px;
     padding-top: 40px;
     font-size: x-large;
+}
+
+#título:hover{
+    color: #050539 !important;
 }
 
 /*email*/
@@ -322,7 +326,7 @@ footer {
 }
 
 .form-container .btn {
-    background-color: #37327C;
+    background-color: #312E59;
     color: white;
     padding: 16px 20px;
     border: none;

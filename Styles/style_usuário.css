@@ -13,6 +13,7 @@ header {
     height: 10%;
     position: fixed;
 }
+
 .localização,
 .inicio {
     padding-left: 40px;
@@ -22,6 +23,7 @@ header {
     float: right;
     padding-top: 22px;
 }
+
 #btnLogin {
     float: right;
     padding-left: 40px;
@@ -37,67 +39,80 @@ header {
 /*Corpo da página*/
 
 
-section{
+section {
     margin-top: 0px;
     padding-top: 30px;
-    
+
 }
+
 #container {
     height: 82.22px;
     width: 75%;
     background-color: #312E59;
-    border-radius:10px;
+    border-radius: 10px;
     color: white;
     margin-left: auto;
     margin-right: auto;
     margin-top: 110px;
     box-shadow: 0px 5px 5px rgba(48, 48, 48, 0.578);
 }
-h1{
+
+h1 {
     padding-left: 3%;
     padding-top: 20px;
     font-size: 36px;
     font-weight: bold
 }
-#texto{
+
+#texto {
     color: #312E59;
     margin-left: 12.5%;
     padding-top: 25px;
     font-weight: bold;
 }
 
-#seleção{
-    align-items: center;
-    text-align: center;
+#seleção {
+    margin-left: 150px;
     padding: 40px;
+    margin-bottom: 40px;
 }
-.btnSelecionado{
-    background: #050539;
+
+.btnSelecionado {
+    background: #312E59;
     color: #ffffff;
-    border: none;
+    border-width: 1px;
+    border-color: #ffffff;
     width: 20%;
     height: 45px;
     border-radius: 5px;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+    float: left;
+    margin-right: 15px;
 }
-.btnNselecionado{
+
+.btnNselecionado {
     background: #DCDBE5;
     color: #050539;
-    border: none;
+    border-width: 0.3px;
+    border-color: rgb(222, 222, 222);
     width: 20%;
     height: 45px;
     border-radius: 5px;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     cursor: pointer;
+    float: left;
+    margin-right: 15px;
 }
 
-.btnNselecionado:hover{
-    box-shadow: 0px 0px 15px rgba(83, 83, 83, 0.578);
+
+
+.btnNselecionado:hover {
+    box-shadow: 0px 0px 10px rgba(83, 83, 83, 0.578);
 }
 
-#container2{
+#container2 {
     height: auto;
     width: 75%;
     background-color: #DCDBE5;
@@ -105,46 +120,56 @@ h1{
     margin-left: auto;
     margin-right: auto;
 }
-table{
+
+table {
     width: 100%;
     font-size: large;
+    cursor: default;
 }
-tr{
+
+tr {
     display: grid;
     grid-template-columns: 2fr 5fr 2fr 1fr;
 }
-th{
+
+th {
     color: #050539;
     margin-bottom: 20px;
     font-size: 16px;
 }
-td{
+
+td {
     text-align: center;
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     border-radius: 8.39px;
     background-color: white;
     padding: 10px;
     color: #050539;
 }
-.exibirMais input{
-   display: none;
+
+.exibirMais input {
+    display: none;
 }
-.exibirMais{
+
+.exibirMais {
     background-color: transparent;
     background-image: url(https://api.iconify.design/bi/play-circle-fill.svg?color=white);
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
 }
-.analise{
+
+.analise {
     color: #2B22A0;
 }
-.pendente{
+
+.pendente {
     color: #C71313;
 }
-.concluida{
+
+.concluida {
     color: #33b838;
 }
 
@@ -180,7 +205,7 @@ footer {
 
 
 /*ListadeSerciçosPalmeiras*/
-#municípios{
+#municípios {
     margin-left: 50px;
     margin-top: 50px;
     border-radius: 10px;
@@ -191,7 +216,11 @@ footer {
     background-color: #F8F8F8;
 }
 
-.registroCivil, .notas, .protesto, .hipotecas, .jurídicas{
+.registroCivil,
+.notas,
+.protesto,
+.hipotecas,
+.jurídicas {
     padding-left: 50px;
     padding-bottom: 25px;
     font-size: 18px;
@@ -211,12 +240,12 @@ footer {
     color: #050539;
     cursor: default;
     line-height: 22px;
-    list-style:none;
+    list-style: none;
     font-size: 16px;
 }
 
 #BtIniciarAgen {
-    background-color: #37327C;
+    background-color: #312E59;
     float: right;
     margin-right: 10px;
     width: 37%;
@@ -240,3 +269,10 @@ span {
     line-height: 30px
 }
 
+span:hover {
+    color: #1206b8;
+}
+
+#título:hover {
+    color: #050539 !important;
+}

@@ -31,7 +31,7 @@ function statusAgendamentos (){
 }
 btnStatus.onclick= statusAgendamentos;
 
-
+/**descer informações */
 document.querySelectorAll('[palmeiras]').forEach(folder => {
     folder.onclick = function (e) {
         const ul = folder.nextElementSibling
@@ -39,6 +39,69 @@ document.querySelectorAll('[palmeiras]').forEach(folder => {
         ul.style.display = d === 'none' ? 'block' : 'none';
     }
 })
+
+/**Serviço de cada município */
+const localiza = document.getElementsByClassName("localizaçãoCartório");
+const hr = document.getElementsByClassName("horário");
+
+function mudarServiço(município){
+
+    if(município=="mucu"){
+        document.querySelector(".notas").style.display = "block";
+        document.querySelector(".protesto").style.display = "block";
+        document.querySelector(".jurídicas").style.display = "none";
+        document.querySelector(".hipotecas").style.display = "none";
+        document.querySelector(".registroCivil").style.display = "none";
+
+        for (let i = 0; i < localiza.length; ++i) {
+            localiza[i].innerHTML = "Localização do cartório: Travessa Rua da Várzea, Galeria Sala 1, Cidade Histórica";
+            hr[i].innerHTML = "Horário de funcionamento: 07 às 13hr";
+    
+        }
+    }
+    else if (município=="pal"){
+        document.querySelector(".hipotecas").style.display = "block";
+        document.querySelector(".notas").style.display = "block";
+        document.querySelector(".registroCivil").style.display = "block";
+        document.querySelector(".jurídicas").style.display = "block";
+        document.querySelector(".hipotecas").style.display = "block";
+
+        for (let i = 0; i < localiza.length; ++i) {
+            localiza[i].innerHTML = "Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro";
+            hr[i].innerHTML = "Horário de funcionamento: 08 às 14hr";
+    
+        }
+    }
+    else if (município=="ira"){
+        document.querySelector(".registroCivil").style.display = "block";
+        document.querySelector(".protesto").style.display = "block";
+        document.querySelector(".notas").style.display = "block";
+        document.querySelector(".hipotecas").style.display = "none"
+        document.querySelector(".jurídicas").style.display = "none"
+
+        for (let i = 0; i < localiza.length; ++i) {
+            localiza[i].innerHTML = "Localização do cartório: RO BR 122, s/n, centro";
+            hr[i].innerHTML = "Horário de funcionamento: 08 às 14hr";
+    
+        }
+    
+    
+    }
+    else{
+        document.querySelector(".registroCivil").style.display = "block";
+        document.querySelector(".notas").style.display = "block";
+        document.querySelector(".jurídicas").style.display = "none"
+        document.querySelector(".hipotecas").style.display = "none"
+        document.querySelector(".protesto").style.display = "none"
+
+        for (let i = 0; i < localiza.length; ++i) {
+            localiza[i].innerHTML = "Localização do cartório: Rua dos Gatos, s/n, Galeria Empório do Vale, Sala 1";
+            hr[i].innerHTML = "Horário de funcionamento: 08 às 14hr";
+    
+        }
+    }
+}
+
 
 
 

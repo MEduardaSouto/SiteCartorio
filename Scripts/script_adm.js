@@ -71,7 +71,7 @@ closeForm();
 /*sair do perfil */
 const btnSair = document.getElementById("btnSair");
 
-function sairPerfil(){
+function sairPerfil() {
     window.location.href = " file:///C:/Users/gomes/OneDrive/%C3%81rea%20de%20Trabalho/RiseUp/index.html";
 }
 btnSair.onclick = sairPerfil;
@@ -79,6 +79,21 @@ btnSair.onclick = sairPerfil;
 
 
 /*alterar status */
-$('.status option[value=pendente]').change(function(){
-    $(this).css('color', 'red');
-});
+const select = document.querySelectorAll(".status")
+console.log(select);
+
+function mudarCor(status) {
+
+    for (let i = 0; i < select.length; ++i) {
+        if (status == "pendente") {
+            select[i].style.color = "red";
+        }
+        else if (status == "concluido") {
+            select[i].style.color = "green";
+        }
+        else{
+            select[i].style.color = "blue";
+        }
+    }
+
+}
