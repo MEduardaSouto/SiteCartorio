@@ -117,10 +117,6 @@ td {
 
 .exibirMais {
     background-color: transparent;
-    background-image: url(https://api.iconify.design/bi/play-circle-fill.svg?color=white);
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
 }
 
 .informes {
