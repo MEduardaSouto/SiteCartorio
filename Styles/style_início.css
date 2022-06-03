@@ -350,3 +350,16 @@ footer {
 .open-button:hover {
     opacity: 1;
 }
+
+/* personalize o mapa aqui ^^ */
+
+#mapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#mapa1 {
+    margin-right: 14%;
+}
