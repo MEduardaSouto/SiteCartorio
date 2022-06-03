@@ -79,12 +79,22 @@ btnSair.onclick = sairPerfil;
 
 
 /*alterar status */
-const select = document.querySelectorAll(".status")
-console.log(select);
+// const select = document.querySelectorAll(".status")
+// console.log(select);
 
-function mudarCor(status) {
+function mudarCor(obj) {
 
-    for (let i = 0; i < select.length; ++i) {
+    if (obj.value == "pendente") {
+        obj.style.color = "red";
+    }
+    else if (obj.value == "concluido") {
+        obj.style.color = "green";
+    }
+    else if (obj.value == "analise") {
+        obj.style.color = "blue";
+    }
+
+    /*for (let i = 0; i < select.length; ++i) {
         if (status == "pendente") {
             select[i].style.color = "red";
         }
@@ -94,6 +104,8 @@ function mudarCor(status) {
         else{
             select[i].style.color = "blue";
         }
-    }
+    }*/
+
+
 
 }
