@@ -1,83 +1,21 @@
-function expandir(){
-    let show = document.getElementById("exp_1");
-    let infos = document.getElementById("inf4");
-    if(show.checked==true){
-        infos.style.display = "block";
-    }
-    else{
-        infos.style.display = "none"
-    }
-}
+function expandir() {
 
-/*|
-function inserir(){
-const coluna1 = document.createElement('td');
-const linha = document.createElement('tr')
-for (i=0; i<fghjikop.lenght; ++i){
-    let textcoluna1 = document.bdjch;
-    
-    coluna1.appendChild(textcoluna1);
-    linha.appendChild(coluna1);
+    let show = document.querySelectorAll("#exp_1");
 
-}
-/*show = document.getElementById('inf1', 'inf2', 'inf3', 'inf4', 'inf5', 'inf6', 'inf7');
+    let infos = document.querySelectorAll("#inf4");
 
-function inf1_show() {
-    if (inf1.style.display == "block") {
-        inf1.style.display = "none";
-    } else {
-        inf1.style.display = "block";
+    for (let i = 0; i < show.length; ++i) {
+
+        if (show[i].checked == true) {
+            infos[i].style.display = "block";
+        }
+        else {
+            infos[i].style.display = "none"
+        }
+
     }
 }
 
-function inf2_show() {
-    if (inf2.style.display == "block") {
-        inf2.style.display = "none";
-    } else {
-        inf2.style.display = "block";
-    }
-}
-
-function inf3_show() {
-    if (inf3.style.display == "block") {
-        inf3.style.display = "none";
-    } else {
-        inf3.style.display = "block";
-    }
-}
-
-function inf4_show() {
-    if (inf4.style.display == "block") {
-        inf4.style.display = "none";
-    } else {
-        inf4.style.display = "block";
-    }
-}
-
-function inf5_show() {
-    if (inf5.style.display == "block") {
-        inf5.style.display = "none";
-    } else {
-        inf5.style.display = "block";
-    }
-}
-
-function inf6_show() {
-    if (inf6.style.display == "block") {
-        inf6.style.display = "none";
-    } else {
-        inf6.style.display = "block";
-    }
-}
-
-function inf7_show() {
-    if (inf7.style.display == "block") {
-        inf7.style.display = "none";
-    } else {
-        inf7.style.display = "block";
-    }
-}
-*/
 
 /*popup-login */
 function openForm() {

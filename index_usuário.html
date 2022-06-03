@@ -47,10 +47,10 @@
             <div id="tabela">
 
                 <table>
-                    <tr>
-                        <th>DATA DE ENVIO</th>
+                    <tr style="margin-top: -10px;">
+                        <th style="margin-left: 12px;" >DATA DE ENVIO</th>
                         <th>SERVIÇO</th>
-                        <th>STATUS</th>
+                        <th style="margin-left: -40px;"> STATUS</th>
                     </tr>
                     <br>
 
@@ -59,11 +59,16 @@
                         <td class="data"> 23/04</td>
                         <td class="nome">Registro de emancipações e interdições</td>
                         <td class="analise">Em análise</td>
-                        <td class="exibirMais"><input type="checkbox" /></td>
+                        <td class="exibirMais">
+                        <label>
+                            <input type="checkbox" id="exp_1" onclick="expandir()"/>
+                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white" alt="seta dentro de um  circulo" style="height: 25px; width: auto; cursor: pointer;"></span>
+                        </label>
+                    </td>
                     </tr>
                     <tr class="informes" id="inf4" style="display: none;">
                         <td>
-                            <div style="float:left ; margin-left: 3px; width: 220px; text-align: left; font-size: 20px; ">Enviar nova documentação (se necessário):
+                            <div style="float:left ; margin-left: 3px; width: 220px; text-align: left; font-size: 18px; ">Enviar nova documentação (se necessário):
                             </div><br>
 
                             <input type="file" style="margin-top: 10px; margin-left: 0px; margin-bottom: 27px;"><br>
@@ -89,30 +94,32 @@
                         <td class="data"> 23/04</td>
                         <td class="nome">Reconhecimento de paternidade</td>
                         <td class="pendente">Pendente</td>
-                        <td class="exibirMais"><input type="checkbox" /></td>
+                        <td class="exibirMais">
+                        <label>
+                            <input type="checkbox" id="exp_1" onclick="expandir()"/>
+                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white" alt="seta dentro de um  circulo" style="height: 25px; width: auto; cursor: pointer;"></span>
+                        </label>
+                    </td>
                     </tr>
-                    <tr class="informes" id="inf4" style="display: none; width: 994px;">
+                    <tr class="informes" id="inf4" style="display: none;">
                         <td>
-                            <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
-                            <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
-                            <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
-                            <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
+                            <div style="float:left ; margin-left: 3px; width: 220px; text-align: left; font-size: 18px; ">Enviar nova documentação (se necessário):
+                            </div><br>
+
+                            <input type="file" style="margin-top: 10px; margin-left: 0px; margin-bottom: 27px;"><br>
+
+                            <input type="checkbox" style="float: left;"> <div style="font-size: 14px;">Salvar documentação para utilizar depois</div> 
+
                         </td>
                         <td>
-                            <textarea name="descricao" id="descricao" cols="30" rows="10"
+                            <textarea name="descricao" id="descricao" cols="30" rows="10" disabled=""
                                 placeholder="Feedback recebido"
-                                style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
+                                style="background-color: #dcdbe570; cursor: no-drop; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px; margin-top: 12px;"></textarea>
                         </td>
                         <td>
                             <strong style="font-size: 20px; margin-left:44px;"> Data marcada<br></strong>
-                            <input type="date" id="data"
-                                style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
+                            <input type="date" id="data" disabled=""
+                                style="margin-top: 10px; cursor: no-drop; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
                         </td>
                     </tr>
 
@@ -122,30 +129,32 @@
                         <td class="data"> 22/04</td>
                         <td class="nome">Autenticação (cópia autenticada)</td>
                         <td class="concluida">Concluída</td>
-                        <td class="exibirMais"><input type="checkbox" /></td>
+                        <td class="exibirMais">
+                        <label>
+                            <input type="checkbox" id="exp_1" onclick="expandir()"/>
+                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white" alt="seta dentro de um  circulo" style="height: 25px; width: auto; cursor: pointer;"></span>
+                        </label>
+                    </td>
                     </tr>
-                    <tr class="informes" id="inf4" style="display: none; width: 994px;">
+                    <tr class="informes" id="inf4" style="display: none;">
                         <td>
-                            <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
-                            <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
-                            <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
-                            <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
+                            <div style="float:left ; margin-left: 3px; width: 220px; text-align: left; font-size: 18px; ">Enviar nova documentação (se necessário):
+                            </div><br>
+
+                            <input type="file" style="margin-top: 10px; margin-left: 0px; margin-bottom: 27px;"><br>
+
+                            <input type="checkbox" style="float: left;"> <div style="font-size: 14px;">Salvar documentação para utilizar depois</div> 
+
                         </td>
                         <td>
-                            <textarea name="descricao" id="descricao" cols="30" rows="10"
+                            <textarea name="descricao" id="descricao" cols="30" rows="10" disabled=""
                                 placeholder="Feedback recebido"
-                                style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
+                                style="background-color: #dcdbe570; cursor: no-drop; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px; margin-top: 12px;"></textarea>
                         </td>
                         <td>
                             <strong style="font-size: 20px; margin-left:44px;"> Data marcada<br></strong>
-                            <input type="date" id="data"
-                                style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
+                            <input type="date" id="data" disabled=""
+                                style="margin-top: 10px; cursor: no-drop; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
                         </td>
                     </tr>
 
@@ -155,30 +164,32 @@
                         <td class="data"> 21/04</td>
                         <td class="nome">Dissolução de Sociedade</td>
                         <td class="concluida">Concluída</td>
-                        <td class="exibirMais"><input type="checkbox" /></td>
+                        <td class="exibirMais">
+                        <label>
+                            <input type="checkbox" id="exp_1" onclick="expandir()"/>
+                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white" alt="seta dentro de um  circulo" style="height: 25px; width: auto; cursor: pointer;"></span>
+                        </label>
+                    </td>
                     </tr>
-                    <tr class="informes" id="inf4" style="display: none; width: 994px;">
+                    <tr class="informes" id="inf4" style="display: none;">
                         <td>
-                            <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
-                            <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
-                            <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
-                            <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
+                            <div style="float:left ; margin-left: 3px; width: 220px; text-align: left; font-size: 18px; ">Enviar nova documentação (se necessário):
+                            </div><br>
+
+                            <input type="file" style="margin-top: 10px; margin-left: 0px; margin-bottom: 27px;"><br>
+
+                            <input type="checkbox" style="float: left;"> <div style="font-size: 14px;">Salvar documentação para utilizar depois</div> 
+
                         </td>
                         <td>
-                            <textarea name="descricao" id="descricao" cols="30" rows="10"
+                            <textarea name="descricao" id="descricao" cols="30" rows="10" disabled=""
                                 placeholder="Feedback recebido"
-                                style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
+                                style="background-color: #dcdbe570; cursor: no-drop; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px; margin-top: 12px;"></textarea>
                         </td>
                         <td>
                             <strong style="font-size: 20px; margin-left:44px;"> Data marcada<br></strong>
-                            <input type="date" id="data"
-                                style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
+                            <input type="date" id="data" disabled=""
+                                style="margin-top: 10px; cursor: no-drop; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
                         </td>
                     </tr>
 
@@ -188,30 +199,32 @@
                         <td class="data"> 18/04</td>
                         <td class="nome">Declaração</td>
                         <td class="analise">Em análise</td>
-                        <td class="exibirMais"><input type="checkbox" /></td>
+                        <td class="exibirMais">
+                        <label>
+                            <input type="checkbox" id="exp_1" onclick="expandir()"/>
+                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white" alt="seta dentro de um  circulo" style="height: 25px; width: auto; cursor: pointer;"></span>
+                        </label>
+                    </td>
                     </tr>
-                    <tr class="informes" id="inf4" style="display: none; width: 994px;">
+                    <tr class="informes" id="inf4" style="display: none;">
                         <td>
-                            <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
-                            <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
-                            <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
-                            <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
-                            <input type="button" value="CPF.pdf"
-                                style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
+                            <div style="float:left ; margin-left: 3px; width: 220px; text-align: left; font-size: 18px; ">Enviar nova documentação (se necessário):
+                            </div><br>
+
+                            <input type="file" style="margin-top: 10px; margin-left: 0px; margin-bottom: 27px;"><br>
+
+                            <input type="checkbox" style="float: left;"> <div style="font-size: 14px;">Salvar documentação para utilizar depois</div> 
+
                         </td>
                         <td>
-                            <textarea name="descricao" id="descricao" cols="30" rows="10"
+                            <textarea name="descricao" id="descricao" cols="30" rows="10" disabled=""
                                 placeholder="Feedback recebido"
-                                style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
+                                style="background-color: #dcdbe570; cursor: no-drop; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px; margin-top: 12px;"></textarea>
                         </td>
                         <td>
                             <strong style="font-size: 20px; margin-left:44px;"> Data marcada<br></strong>
-                            <input type="date" id="data"
-                                style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
+                            <input type="date" id="data" disabled=""
+                                style="margin-top: 10px; cursor: no-drop; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
                         </td>
                     </tr>
 

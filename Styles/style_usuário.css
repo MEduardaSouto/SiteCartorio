@@ -36,9 +36,8 @@ header {
     cursor: pointer;
 }
 
-/*Corpo da página*/
 
-
+/*início da página*/
 section {
     margin-top: 0px;
     padding-top: 30px;
@@ -64,13 +63,9 @@ h1 {
     font-weight: bold
 }
 
-#texto {
-    color: #312E59;
-    margin-left: 12.5%;
-    padding-top: 25px;
-    font-weight: bold;
-}
 
+
+/*botões de seleção*/
 #seleção {
     margin-left: 150px;
     padding: 40px;
@@ -106,12 +101,17 @@ h1 {
     margin-right: 15px;
 }
 
-
-
 .btnNselecionado:hover {
     box-shadow: 0px 0px 10px rgba(83, 83, 83, 0.578);
 }
 
+#novoAgendamento{
+    width: 23%;
+}
+
+
+
+/*tabela*/
 #container2 {
     height: auto;
     width: 75%;
@@ -129,13 +129,15 @@ table {
 
 tr {
     display: grid;
-    grid-template-columns: 2fr 5fr 2fr 1fr;
+    grid-template-columns: 2fr 5fr 2fr 0.5fr;
+    align-items: center;
+    height: 60px;
+
 }
 
 th {
     color: #050539;
-    margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 td {
@@ -145,9 +147,10 @@ td {
     margin-bottom: 20px;
     border-radius: 8.39px;
     background-color: white;
-    padding: 10px;
+    padding: 13px;
     color: #050539;
 }
+
 
 .exibirMais input {
     display: none;
@@ -155,18 +158,21 @@ td {
 
 .exibirMais {
     background-color: transparent;
-    background-image: url(https://api.iconify.design/bi/play-circle-fill.svg?color=white);
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
+    width: 30px;
+    padding-top: 20px;
 }
 
+.data{
+    width: 70%;
+    margin-left: 30px;
+}
 .analise {
     color: #2B22A0;
 }
 
 .pendente {
     color: #C71313;
+    
 }
 
 .concluida {
@@ -176,35 +182,20 @@ td {
 .informes {
     height: 150px;
     border-radius: 8.39px;
-    margin-left: 15px;
+    margin-left: 30px;
     margin-right: 10px;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-color: white;
     color: rgba(14, 13, 13, 0.884);
     list-style: none;
     font-size: 15px;
-    width: 994px;
+    width: 1005px;
 }
 
 
-/*rodapé*/
-footer {
-    background-color: #050539;
-    width: 100%;
-    height: 10%;
-    margin-top: 50px;
-}
 
-#elementosRodapé {
-    padding: 25px;
-    text-align: center;
-    color: white;
-    font-size: 18px;
-}
-
-
-/*ListadeSerciçosPalmeiras*/
+/*Lista de Serciços*/
 #municípios {
     margin-left: 50px;
     margin-top: 50px;
@@ -276,3 +267,22 @@ span:hover {
 #título:hover {
     color: #050539 !important;
 }
+
+
+
+
+/*rodapé*/
+footer {
+    background-color: #050539;
+    width: 100%;
+    height: 10%;
+    margin-top: 50px;
+}
+
+#elementosRodapé {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+

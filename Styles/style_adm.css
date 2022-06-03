@@ -87,17 +87,21 @@ h1 {
 table {
     width: 100%;
     font-size: large;
+    cursor: default;
 }
+
 
 tr {
     display: grid;
-    grid-template-columns: 2fr 5fr 2fr 1fr;
+    grid-template-columns: 2fr 5fr 2fr 0.5fr;
+    align-items: center;
+    height: 60px;
 }
 
 th {
     color: #050539;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 td {
@@ -107,7 +111,7 @@ td {
     margin-bottom: 20px;
     border-radius: 8.39px;
     background-color: white;
-    padding: 10px;
+    padding: 13px;
     color: #050539;
 }
 
@@ -117,21 +121,27 @@ td {
 
 .exibirMais {
     background-color: transparent;
+    width: 30px;
+    padding-top: 20px;
 }
 
+.data{
+    width: 70%;
+    margin-left: 30px;
+}
+
+
 .informes {
-    width: auto;
+    width: 1005px;
     height: 170px;
     border-radius: 8.39px;
-    margin-left: 15px;
-    margin-right: 10px;
-    margin-bottom: 30px;
-    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     background-color: white;
     color: rgba(14, 13, 13, 0.884);
     list-style: none;
     font-size: 15px;
-    height: auto;
 }
 
 #analise {
@@ -152,6 +162,7 @@ td {
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
     color: #2B22A0;
+    cursor: pointer;
 }
 
 

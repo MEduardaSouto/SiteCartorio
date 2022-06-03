@@ -102,6 +102,24 @@ function mudarServiço(município){
     }
 }
 
+function expandir() {
+
+    let show = document.querySelectorAll("#exp_1");
+
+    let infos = document.querySelectorAll("#inf4");
+
+    for (let i = 0; i < show.length; ++i) {
+
+        if (show[i].checked == true) {
+            infos[i].style.display = "block";
+        }
+        else {
+            infos[i].style.display = "none"
+        }
+
+    }
+}
+
 
 
 
