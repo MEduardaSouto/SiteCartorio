@@ -1,4 +1,26 @@
-show = document.getElementById('inf1', 'inf2', 'inf3', 'inf4', 'inf5', 'inf6', 'inf7');
+function expandir(){
+    let show = document.getElementById("exp_1");
+    let infos = document.getElementById("inf4");
+    if(show.checked==true){
+        infos.style.display = "block";
+    }
+    else{
+        infos.style.display = "none"
+    }
+}
+
+/*|
+function inserir(){
+const coluna1 = document.createElement('td');
+const linha = document.createElement('tr')
+for (i=0; i<fghjikop.lenght; ++i){
+    let textcoluna1 = document.bdjch;
+    
+    coluna1.appendChild(textcoluna1);
+    linha.appendChild(coluna1);
+
+}
+/*show = document.getElementById('inf1', 'inf2', 'inf3', 'inf4', 'inf5', 'inf6', 'inf7');
 
 function inf1_show() {
     if (inf1.style.display == "block") {
@@ -55,7 +77,7 @@ function inf7_show() {
         inf7.style.display = "block";
     }
 }
-
+*/
 
 /*popup-login */
 function openForm() {
