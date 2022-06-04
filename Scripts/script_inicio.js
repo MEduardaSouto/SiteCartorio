@@ -27,6 +27,8 @@ closeForm();
 
 
 
+
+
 /*mudar de municípios */
 const btnP = document.getElementById("btnPalmeiras");
 const btnM = document.getElementById("btnMucugê");
@@ -186,6 +188,40 @@ $(document).ready(function () {
     });
 
 });
+
+/* popup login/registrar */
+
+function openFormRegistrar() {
+    document.getElementById("popupRegistrar").style.display = "block";
+}
+function closeFormRegistrar() {
+    document.getElementById("popupRegistrar").style.display = "none";
+}
+
+
+
+/*popup cadastrar */
+
+function openFormCadastrar() {
+    document.getElementById("popupContainer").style.display = "none";
+    document.getElementById("popupCadastrar").style.display = "block";
+}
+function closeFormCadastrar() {
+    document.getElementById("popupCadastrar").style.display = "none";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
