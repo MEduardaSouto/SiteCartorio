@@ -1,7 +1,8 @@
+
+/**Troca de botões */
 const btnAgendar = document.getElementById("novoAgendamento");
 const btnStatus = document.getElementById("status");
 document.querySelector(".agendamento").style.display = "none";
-
 
 function novoAgendamento(){
 
@@ -17,6 +18,7 @@ function novoAgendamento(){
 }
 btnAgendar.onclick= novoAgendamento;
 
+
 function statusAgendamentos (){
 
     document.querySelector('#tabela').style.display = "block"
@@ -31,7 +33,9 @@ function statusAgendamentos (){
 }
 btnStatus.onclick= statusAgendamentos;
 
-/**descer informações */
+
+
+/**descer informações dos serviços */
 document.querySelectorAll('[palmeiras]').forEach(folder => {
     folder.onclick = function (e) {
         const ul = folder.nextElementSibling
@@ -39,6 +43,8 @@ document.querySelectorAll('[palmeiras]').forEach(folder => {
         ul.style.display = d === 'none' ? 'block' : 'none';
     }
 })
+
+
 
 /**Serviço de cada município */
 const localiza = document.getElementsByClassName("localizaçãoCartório");
@@ -85,7 +91,6 @@ function mudarServiço(município){
     
         }
     
-    
     }
     else{
         document.querySelector(".registroCivil").style.display = "block";
@@ -102,6 +107,9 @@ function mudarServiço(município){
     }
 }
 
+
+
+/**descer as informações de status de agendamento */
 function expandir() {
 
     let show = document.querySelectorAll("#exp_1");

@@ -4,14 +4,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-.setaAtiva {
-    transform: rotate(90deg);
-}
-
-.setaNativa {
-    transform: rotate(0deg);
-}
-
 
 /*cabeçalho*/
 header {
@@ -106,29 +98,10 @@ nav {
     font-family: 'Times New Roman', Times, serif;
 }
 
-
-#bta {
-    background: #050530;
-    color: #050539;
-    margin-left: 4.5%;
-    margin-right: 4.5%;
-    height: 76px;
-    width: 14%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border: #000000;
-    font-size: 26px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#bta:hover {
-    box-shadow: 0px -3px 30px rgba(0, 0, 0, 0.578);
-    cursor: pointer;
-}
-
 .btnNselecionado:hover {
     box-shadow: 0px -3px 30px rgba(0, 0, 0, 0.578);
 }
+
 
 
 /*conatiner serviços*/
@@ -151,7 +124,7 @@ h1 {
     font-weight: bold
 }
 
-#valores{
+#valores {
     margin-top: 50px;
     margin-right: 115px;
     background-color: #312E59;
@@ -171,7 +144,7 @@ h1 {
 
 
 
-/*ListadeSerciçosPalmeiras*/
+/*Lista de Serciços*/
 
 #listaFilha {
     margin-top: 15px;
@@ -214,8 +187,8 @@ span {
     line-height: 30px
 }
 
-span:hover{
-    color:#1206b8;
+span:hover {
+    color: #1206b8;
 }
 
 .registroCivil,
@@ -228,18 +201,19 @@ span:hover{
     font-size: x-large;
 }
 
-#título:hover{
+#título:hover {
     color: #050539 !important;
 }
 
-/*email*/
 
-#email_mapa{
+
+/*email/mapa*/
+#email_mapa {
     margin-left: 135px;
     margin-top: 60px;
 }
 
-#email{
+#email {
     margin: 20px;
     background-color: #DCDBE5;
     border-radius: 3px;
@@ -250,7 +224,7 @@ span:hover{
     padding-left: 10px;
 }
 
-#mensagem{
+#mensagem {
     margin: 20px;
     margin-top: 5px;
     background-color: #DCDBE5;
@@ -261,6 +235,31 @@ span:hover{
     height: 135px;
 }
 
+#enviarEmail{
+    background-color: #37327C;
+    border: none;
+    border-radius: 7px;
+    height:38.02px ;
+    width: 120px;
+    color: white;
+    font-size: 18px;
+    margin-left: 64%;
+    cursor: pointer;
+}
+
+#mapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#mapa1 {
+    margin-right: 15%;
+    margin-top: 30px;
+    width: 500px;
+    height: 200px;
+}
 
 
 /*rodapé*/
@@ -268,7 +267,7 @@ footer {
     background-color: #050539;
     width: 100%;
     height: 10%;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 #elementosRodapé {
@@ -351,40 +350,16 @@ footer {
     opacity: 1;
 }
 
-/* personalize o mapa aqui ^^ */
 
-#mapa {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-}
-
-#mapa1 {
-    margin-right: 14%;
-}
 
 /* popup registrar */
-
-.popupRegistrar {
-    position: absolute;
-    z-index: 999;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.578);
-    justify-content: center;
-    align-items: center;
-    
-    display: none;
-
-}
-
 .popupContainer {
-    background-color: #050539;
-    margin: 15% auto; 
+    background-color: #312E59;
+    margin: 15% auto;
     padding: 15px;
     border-radius: 20px;
-    width: 30%; 
+    width: 35%;
+    height: 50%;
 
     display: flex;
     flex-direction: column;
@@ -392,81 +367,85 @@ footer {
 
     font-family: 'LexendDeca-Regular';
     color: var(--title);
+
+    position: fixed;
+    margin-left: 530px;
+    margin-top: 170px;
 }
 
-.formRegistrar h2,h3{
+
+.formRegistrar h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-left: 42%;
+    font-size: 30px;
+    font: bold;
+    padding: 0px;
+}
+
+.formRegistrar h3 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    color: #ddd;
-    
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    font-size: 21px;
+    font-weight: normal;
 
 }
 
-.formRegistrar{
-    margin-left: 2em;
-    margin-right: 2rem ;
-    
-    
-
-}
-
-.formRegistrarTitle {
-    position:relative;
-    margin-left: 290px;
-    padding-top: 15px;
-    
-
-}
-#closeModalRegistrar{
-    border: 2px solid white;
-    color: white;
-    background-color: #050530;
-    padding: 0.5rem;
-    border-radius: 25px;
-    position: relative;
-    margin-left: 80%;
+#closeModalRegistrar {
+    margin-right: -20px;
+    margin-top: -30px;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
 }
 
-#btnRegistrar {
-    display: flex;
-    margin-top: 10px;
-    background-color: #050530;
-    color: #ddd;
-    width: 30px;
-    
-}
-#btnRegistrar a{
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    
-}
-#btnRegistrar button{
-    color: #ffffff;
-    background-color: #030335e0;
-    border-color: rgb(9, 3, 88);
-    padding: 7px;
-    text-align: center;
-    font-size: 20px;
-    margin-left: 5px;
+.formRegistrar {
+    margin-left: 2em;
+    margin-right: 2rem;
 }
 
-#cpf {
-    display: block;   
-    margin-bottom: 20px;
-    width:400px;
-    height: 50px;
-    border-radius: 13px;
-    
+.formRegistrarTitle {
+    position: relative;
+    margin-left: 290px;
+    padding-top: 15px;
+    float: right;
 }
-#senha {
-    display: block;   
+
+#btnRegistrar a {
+    color: white;
+    text-decoration: none;
+}
+
+#btnRegistrar button {
+    background-color: #37327C;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#btnRegistrar button:hover {
+    opacity: 1;
+}
+
+#cpf, #senha {
+    display: block;
     margin-bottom: 20px;
-    width:400px;
+    width: 480px;
     height: 50px;
-    border-radius: 13px;
-    
+    border-radius: 5px;
+    background-color: #C6C5CD;
+    padding-left: 20px;
+    border: none;
 }
 
 #inputRegistrar {
@@ -474,36 +453,25 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    
+
 }
 
 .popupRegistrar {
-    display: none; 
+    display: none;
     position: fixed;
-    z-index: 1; 
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.formRegistrar h3 {
-    font-size: 21px;
-}
-.formRegistrar h2 {
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    font: bold;
-}
 
-.btnRegistrar button::after{
-    background-color: #312E59;
-}
 
-/* popup Cadastrar */ 
 
+/* popup Cadastrar */
 .popupCadastrar {
     position: absolute;
     z-index: 999;
@@ -512,17 +480,17 @@ footer {
     background-color: rgba(0, 0, 0, 0.578);
     justify-content: center;
     align-items: center;
-    
+
     display: none;
 
 }
 
 .popupContainerCadastrar {
     background-color: #050539;
-    margin: 15% auto; 
+    margin: 15% auto;
     padding: 15px;
     border-radius: 20px;
-    width: 30%; 
+    width: 30%;
 
     display: flex;
     flex-direction: column;
@@ -532,30 +500,30 @@ footer {
     color: var(--title);
 }
 
-.formCadastrar h2,h3{
+.formCadastrar h2,
+h3 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: #ddd;
-    
+
 
 }
 
-.formCadastrar{
+.formCadastrar {
     margin-left: 2em;
-    margin-right: 2rem ;
-    
-    
+    margin-right: 2rem;
 
 }
 
 .formCadastrarTitle {
-    position:relative;
+    position: relative;
     margin-left: 290px;
     padding-top: 15px;
-    
+
 
 }
-#closeModalCadastrar{
+
+#closeModalCadastrar {
     border: 2px solid white;
     color: white;
     background-color: #050530;
@@ -572,15 +540,17 @@ footer {
     background-color: #050530;
     color: #ddd;
     width: 30px;
-    
+
 }
-#btnCadastrar a{
+
+#btnCadastrar a {
     color: white;
     text-decoration: none;
     text-align: center;
-    
+
 }
-#btnCadastrar button{
+
+#btnCadastrar button {
     color: #ffffff;
     background-color: #030335e0;
     border-color: rgb(9, 3, 88);
@@ -590,21 +560,22 @@ footer {
     margin-left: 5px;
 }
 
-#cpfCad{
-    display: block;   
+#cpfCad {
+    display: block;
     margin-bottom: 20px;
-    width:400px;
+    width: 400px;
     height: 50px;
     border-radius: 13px;
-    
+
 }
+
 #senhaCad {
-    display: block;   
+    display: block;
     margin-bottom: 20px;
-    width:400px;
+    width: 400px;
     height: 50px;
     border-radius: 13px;
-    
+
 }
 
 #inputCadastrar {
@@ -612,33 +583,31 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    
+
 }
 
 .popupCadastrar {
-    display: none; 
+    display: none;
     position: fixed;
-    z-index: 1; 
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .formCadastrar h3 {
     font-size: 21px;
 }
+
 .formCadastrar h2 {
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     font: bold;
 }
 
-.btnCadastrar button::after{
+.btnCadastrar button::after {
     background-color: #312E59;
 }
-
-
-

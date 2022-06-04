@@ -11,14 +11,13 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="Scripts/script_adm.js" defer></script>
-
-    <title>Cartórios Franciso da Motta</title>
+    <title>Cartórios Francisco da Motta</title>
 </head>
 
 <body>
 
+    <!--cabeçalho-->
     <header>
-        <!--cabeçalho-->
         <button id="btnLogin" onclick="openForm()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                 fill="currentColor" class="seta" id="login" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -29,8 +28,268 @@
         <a class="inicio" href="index.html">INÍCIO</a>
     </header>
 
+
+    <!--Corpo do texto-->
+    <section>
+
+        <div id="container">
+            <h1>Olá, Administrador!</h1>
+        </div>
+
+
+        <div id="container2">
+            <table>
+                <tr style="margin-top: 5px; margin-bottom: -5px;">
+                    <th style="margin-left: 12px;">DATA RECEBIDA</th>
+                    <th>NOME DO REQUERINTE</th>
+                    <th style="margin-left: -40px;">STATUS</th>
+                </tr>
+                <br>
+
+
+                <tr>
+                    <td class="data"> 23/04</td>
+                    <td class="nome">Maria Eduarda Souto Gomes da Silva</td>
+                    <td>
+
+                        <select class="status" onchange="mudarCor(this)">
+                            <option value="concluido" id="concluido">Concluído</option>
+                            <option value="pendente" id="pendente">Pendente</option>
+                            <option value="analise" id="analise" selected>Em análise</option>
+                        </select>
+
+                    </td>
+                    <td class="exibirMais">
+                        <label>
+                            <input type="checkbox" id="exp_1" onclick="expandir()" />
+                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white"
+                                    alt="seta dentro de um  circulo"
+                                    style="height: 25px; width: auto; cursor: pointer;"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr class="informes" id="inf4" style="display: none;">
+                    <td>
+                        <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
+                        <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
+                        <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
+                        <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
+                    </td>
+                    <td>
+                        <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Adicionar feedback:"
+                            style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
+                    </td>
+                    <td>
+                        <strong style="font-size: 20px; margin-left:44px;"> Marcar data<br></strong>
+                        <input type="date" id="data"
+                            style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td class="data"> 23/04</td>
+                    <td class="nome">José Gomes da Silva</td>
+                    <td>
+                        <select class="status" onchange="mudarCor(this)">
+                            <option value="concluido" id="concluido">Concluído</option>
+                            <option value="pendente" id="pendente">Pendente</option>
+                            <option value="analise" id="analise" selected>Em análise</option>
+                        </select>
+                    </td>
+
+                    <td class="exibirMais">
+                        <label>
+                            <input type="checkbox" id="exp_1" onclick="expandir()" />
+                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white"
+                                    alt="seta dentro de um  circulo"
+                                    style="height: 25px; width: auto; cursor: pointer;"></span>
+                        </label>
+                    </td>
+
+                </tr>
+                <tr class="informes" id="inf4" style="display: none;">
+                    <td>
+                        <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
+                        <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
+                        <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
+                        <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
+                    </td>
+                    <td>
+                        <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Adicionar feedback:"
+                            style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
+                    </td>
+                    <td>
+                        <strong style="font-size: 20px; margin-left:44px;"> Marcar data<br></strong>
+                        <input type="date" id="data"
+                            style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td class="data"> 22/04</td>
+                    <td class="nome">Márcio José Francisco Ferraz</td>
+                    <td>
+                        <select class="status" onchange="mudarCor(this)">
+                            <option value="concluido" id="concluido">Concluído</option>
+                            <option value="pendente" id="pendente">Pendente</option>
+                            <option value="analise" id="analise" selected>Em análise</option>
+                        </select>
+                    </td>
+                    <td class="exibirMais">
+                        <label>
+                            <input type="checkbox" id="exp_1" onclick="expandir()" />
+                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white"
+                                    alt="seta dentro de um  circulo"
+                                    style="height: 25px; width: auto; cursor: pointer;"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr class="informes" id="inf4" style="display: none;">
+                    <td>
+                        <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
+                        <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
+                        <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
+                        <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
+                    </td>
+                    <td>
+                        <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Adicionar feedback:"
+                            style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
+                    </td>
+                    <td>
+                        <strong style="font-size: 20px; margin-left:44px;"> Marcar data<br></strong>
+                        <input type="date" id="data"
+                            style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td class="data"> 21/04</td>
+                    <td class="nome">Maria José da Silva</td>
+                    <td>
+                        <select class="status" onchange="mudarCor(this)">
+                            <option value="concluido" id="concluido">Concluído</option>
+                            <option value="pendente" id="pendente">Pendente</option>
+                            <option value="analise" id="analise" selected>Em análise</option>
+                        </select>
+                    </td>
+                    <td class="exibirMais">
+                        <label>
+                            <input type="checkbox" id="exp_1" onclick="expandir()" />
+                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white"
+                                    alt="seta dentro de um  circulo"
+                                    style="height: 25px; width: auto; cursor: pointer;"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr class="informes" id="inf4" style="display: none;">
+                    <td>
+                        <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
+                        <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
+                        <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
+                        <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
+                    </td>
+                    <td>
+                        <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Adicionar feedback:"
+                            style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
+                    </td>
+                    <td>
+                        <strong style="font-size: 20px; margin-left:44px;"> Marcar data<br></strong>
+                        <input type="date" id="data"
+                            style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td class="data"> 18/04</td>
+                    <td class="nome">Bruna Gonçalves Ferreira</td>
+                    <td>
+                        <select class="status" onchange="mudarCor(this)">
+                            <option value="concluido" id="concluido">Concluído</option>
+                            <option value="pendente" id="pendente">Pendente</option>
+                            <option value="analise" id="analise" selected>Em análise</option>
+                        </select>
+                    </td>
+                    <td class="exibirMais">
+                        <label>
+                            <input type="checkbox" id="exp_1" onclick="expandir()" />
+                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white"
+                                    alt="seta dentro de um  circulo"
+                                    style="height: 25px; width: auto; cursor: pointer;"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr class="informes" id="inf4" style="display: none;">
+                    <td>
+                        <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
+                        <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
+                        <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
+                        <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
+                        <input type="button" value="CPF.pdf"
+                            style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
+                    </td>
+                    <td>
+                        <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Adicionar feedback:"
+                            style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
+                    </td>
+                    <td>
+                        <strong style="font-size: 20px; margin-left:44px;"> Marcar data<br></strong>
+                        <input type="date" id="data"
+                            style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;">
+                    </td>
+                </tr>
+
+            </table>
+            <br>
+    </section>
+    <br>
+
+    
+    <!--Rodapé-->
+    <footer>
+        <div id="elementosRodapé">
+            Cartórios Francisco da Motta | Agradecemos sua visita
+        </div>
+    </footer>
+
+
+    <!--popup sair do login-->
     <div class="form-popup" id="myForm">
-        <!--pop-out login-->
         <form action="/action_page.php" class="form-container">
 
             <button type="button" class="btn cancel" onclick="closeForm()"> <svg xmlns="http://www.w3.org/2000/svg"
@@ -60,237 +319,6 @@
             </button>
         </form>
     </div>
-
-
-    <section>
-        <!--Corpo do texto-->
-
-        <div id="container">
-            <h1>Olá, Administrador!</h1>
-        </div>
-
-
-        <div id="container2">
-            <table>
-                <tr style="margin-top: 5px; margin-bottom: -5px;">
-                    <th style="margin-left: 12px;" >DATA RECEBIDA</th>
-                    <th>NOME DO REQUERINTE</th>
-                    <th style="margin-left: -40px;" >STATUS</th>
-                </tr>
-                <br>
-
-
-                <tr>
-                    <td class="data"> 23/04</td>
-                    <td class="nome">Maria Eduarda Souto Gomes da Silva</td>
-                    <td>
-                        
-                        <select class="status" onchange="mudarCor(this)">
-                            <option value="concluido" id="concluido" >Concluído</option>
-                            <option value="pendente" id="pendente" >Pendente</option>
-                            <option value="analise" id="analise" selected>Em análise</option>
-                        </select>
-
-                    </td>
-                    <td class="exibirMais">
-                        <label>
-                            <input type="checkbox" id="exp_1" onclick="expandir()"/>
-                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white" alt="seta dentro de um  circulo" style="height: 25px; width: auto; cursor: pointer;"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr class="informes" id="inf4" style="display: none;">
-                    <td>
-                        <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
-                        <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
-                        <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
-                        <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
-                        <input type="button" value="CPF.pdf" style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
-                        <input type="button" value="CPF.pdf" style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
-                        <input type="button" value="CPF.pdf" style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
-                    </td>
-                    <td>
-                        <textarea name="descricao" id="descricao" cols="30" rows="10"
-                            placeholder="Adicionar feedback:" style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
-                    </td>
-                    <td>
-                        <strong style="font-size: 20px; margin-left:44px;"> Marcar data<br></strong>
-                        <input type="date" id="data" style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;" >
-                    </td>
-                </tr>
-
-
-
-                <tr>
-                    <td class="data"> 23/04</td>
-                    <td class="nome">José Gomes da Silva</td>
-                    <td>
-                        <select class="status" onchange="mudarCor(this)">
-                            <option value="concluido" id="concluido" >Concluído</option>
-                            <option value="pendente" id="pendente" >Pendente</option>
-                            <option value="analise" id="analise" selected>Em análise</option>
-                        </select>
-                    </td>
-
-                    <td class="exibirMais">
-                        <label>
-                            <input type="checkbox" id="exp_1" onclick="expandir()"/>
-                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white" alt="seta dentro de um  circulo" style="height: 25px; width: auto; cursor: pointer;"></span>
-                        </label>
-                    </td>
-                
-                </tr>
-                <tr class="informes" id="inf4" style="display: none;">
-                    <td>
-                        <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
-                        <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
-                        <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
-                        <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
-                        <input type="button" value="CPF.pdf" style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
-                        <input type="button" value="CPF.pdf" style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
-                        <input type="button" value="CPF.pdf" style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
-                    </td>
-                    <td>
-                        <textarea name="descricao" id="descricao" cols="30" rows="10"
-                            placeholder="Adicionar feedback:" style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
-                    </td>
-                    <td>
-                        <strong style="font-size: 20px; margin-left:44px;"> Marcar data<br></strong>
-                        <input type="date" id="data" style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;" >
-                    </td>
-                </tr>
-
-
-
-                <tr>
-                    <td class="data"> 22/04</td>
-                    <td class="nome">Márcio José Francisco Ferraz</td>
-                    <td>
-                        <select class="status" onchange="mudarCor(this)">
-                            <option value="concluido" id="concluido" >Concluído</option>
-                            <option value="pendente" id="pendente" >Pendente</option>
-                            <option value="analise" id="analise" selected>Em análise</option>
-                        </select>
-                    </td>
-                    <td class="exibirMais">
-                        <label>
-                            <input type="checkbox" id="exp_1" onclick="expandir()"/>
-                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white" alt="seta dentro de um  circulo" style="height: 25px; width: auto; cursor: pointer;"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr class="informes" id="inf4" style="display: none;">
-                    <td>
-                        <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
-                        <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
-                        <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
-                        <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
-                        <input type="button" value="CPF.pdf" style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
-                        <input type="button" value="CPF.pdf" style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
-                        <input type="button" value="CPF.pdf" style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
-                    </td>
-                    <td>
-                        <textarea name="descricao" id="descricao" cols="30" rows="10"
-                            placeholder="Adicionar feedback:" style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
-                    </td>
-                    <td>
-                        <strong style="font-size: 20px; margin-left:44px;"> Marcar data<br></strong>
-                        <input type="date" id="data" style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;" >
-                    </td>
-                </tr>
-
-
-
-                <tr>
-                    <td class="data"> 21/04</td>
-                    <td class="nome">Maria José da Silva</td>
-                    <td>
-                        <select class="status" onchange="mudarCor(this)">
-                            <option value="concluido" id="concluido" >Concluído</option>
-                            <option value="pendente" id="pendente" >Pendente</option>
-                            <option value="analise" id="analise" selected>Em análise</option>
-                        </select>
-                    </td>
-                    <td class="exibirMais">
-                        <label>
-                            <input type="checkbox" id="exp_1" onclick="expandir()"/>
-                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white" alt="seta dentro de um  circulo" style="height: 25px; width: auto; cursor: pointer;"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr class="informes" id="inf4" style="display: none;">
-                    <td>
-                        <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
-                        <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
-                        <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
-                        <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
-                        <input type="button" value="CPF.pdf" style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
-                        <input type="button" value="CPF.pdf" style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
-                        <input type="button" value="CPF.pdf" style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
-                    </td>
-                    <td>
-                        <textarea name="descricao" id="descricao" cols="30" rows="10"
-                            placeholder="Adicionar feedback:" style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
-                    </td>
-                    <td>
-                        <strong style="font-size: 20px; margin-left:44px;"> Marcar data<br></strong>
-                        <input type="date" id="data" style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;" >
-                    </td>
-                </tr>
-
-
-
-                <tr>
-                    <td class="data"> 18/04</td>
-                    <td class="nome">Bruna Gonçalves Ferreira</td>
-                    <td>
-                        <select class="status" onchange="mudarCor(this)">
-                            <option value="concluido" id="concluido" >Concluído</option>
-                            <option value="pendente" id="pendente" >Pendente</option>
-                            <option value="analise" id="analise" selected>Em análise</option>
-                        </select>
-                    </td>
-                    <td class="exibirMais"> 
-                        <label>
-                            <input type="checkbox" id="exp_1" onclick="expandir()"/>
-                            <span><img src="https://api.iconify.design/bi/play-circle-fill.svg?color=white" alt="seta dentro de um  circulo" style="height: 25px; width: auto; cursor: pointer;"></span>
-                        </label>
-                    </td>
-                </tr>
-                <tr class="informes" id="inf4" style="display: none;">
-                    <td>
-                        <div style="float:left ;"> Email: mariajose100jesus@hotmail.com </div><br>
-                        <div style="float:left ;">Telefone: (75)99745-3386 </div><br>
-                        <div style="float:left ;">Serviço: Registro de óbitos </div><br><br>
-                        <div style="float:left ; margin-left: 3px;">DOCUMENTAÇÃO: </div><br>
-                        <input type="button" value="CPF.pdf" style="margin: 3px;margin-left: -30px;margin-top: 10px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px; cursor: pointer;">
-                        <input type="button" value="CPF.pdf" style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;">
-                        <input type="button" value="CPF.pdf" style="margin: 3px; background-color: transparent; border-color:#050539; border-width: 1px; border-radius: 4px;cursor: pointer;"><br>
-                    </td>
-                    <td>
-                        <textarea name="descricao" id="descricao" cols="30" rows="10"
-                            placeholder="Adicionar feedback:" style="background-color: #dcdbe570; border-color:#bcbcbc; margin-left: 50px; border-radius: 5px; width: 400px; padding: 5px; height: 90px;"></textarea>
-                    </td>
-                    <td>
-                        <strong style="font-size: 20px; margin-left:44px;"> Marcar data<br></strong>
-                        <input type="date" id="data" style="margin-top: 10px; border-radius: 7px;border-width: 1px; border-color: #bcbcbc; background-color: transparent; height: 30px; width: 120px; margin-left:45px;" >
-                    </td>
-                </tr>
-
-                
-
-
-            </table>
-            <br>
-    </section>
-    <br>
-
-    <footer>
-        <!--Rodapé-->
-        <div id="elementosRodapé">
-            Cartórios Francisco da Motta | Agradecemos sua visita
-        </div>
-    </footer>
 
 </body>
 

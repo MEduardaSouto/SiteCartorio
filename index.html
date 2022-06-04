@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,18 @@
     <link rel="stylesheet" type="text/css" href="Styles/style_início.css" media="screen" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" />
     <script src="Scripts/script_inicio.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="icon" type="imagem/png" href="imagens/logo2.jpg" />
-    <title>Cartórios Franciso da Motta</title>
+    <title>Cartórios Francisco da Motta</title>
 </head>
+
 
 <body>
 
+
+    <!--cabeçalho-->
     <header>
-        <!--cabeçalho-->
         <button id="btnLogin" onclick="openForm()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                 fill="currentColor" class="bi bi-person-circle" id="login" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
@@ -28,91 +32,9 @@
     </header>
 
 
-    <div class="form-popup" id="myForm">
-        <!--pop-out login-->
-        <form action="/action_page.php" class="form-container">
-            <button type="button" class="btn cancel" onclick="closeForm()"><svg xmlns="http://www.w3.org/2000/svg"
-                    width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                    <path
-                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                </svg></button>
 
-            <div id="txtLogin">LOGIN</div>
-            <input type="text" placeholder="CPF" name="CPF" required>
-            <input type="password" placeholder="SENHA" name="psw" required>
-            <button id="btnEntrar" class="btn">ENTRAR</button>
-        </form>
-    </div>
-
-    <div class="popupRegistrar" id="popupRegistrar">
-        <div class="popupContainer">
-            <form class="formRegistrar" method="get" action="">
-                <div class="formRegistrarTitle">
-                    
-                    <button id="closeModalRegistrar" onclick="closeFormRegistrar()" >X</button>
-                </div>
-               <strong><h2>LOGIN</h2></strong> 
-                <h3>Caso ja tenha cadastro, faça seu login para realizar o agendamento a partir do seu perfil</h3>
-
-                <div id="inputRegistrar">
-                    <input id="cpf" type="text" placeholder="CPF">
-                    <input id="senha" type="text" placeholder="SENHA">
-
-                </div>
-
-                <div id="btnRegistrar">
-                    <button href="index_usuário.html" ><a href="index_usuário.html">Entrar</a></button>
-                    <button onclick="openFormCadastrar()">Cadastrar</button>
-
-                </div>
-                
-                
-            </form>
-
-            
-
-
-        </div>
-
-    </div>
-
-    <div class="popupCadastrar" id="popupCadastrar">
-        <div class="popupContainerCadastrar">
-            <form class="formCadastrar" method="get" action="">
-                <div class="formCadastrarTitle">
-                    
-                    <button id="closeModalCadastrar" onclick="closeFormCadastrar()" >X</button>
-                </div>
-               <strong><h2>LOGIN</h2></strong> 
-                <h3>Caso ja tenha cadastro, faça seu login para realizar o agendamento a partir do seu perfil</h3>
-
-                <div id="inputCadastrar">
-                    <input id="cpfCad" type="text" placeholder="CPF">
-                    <input id="senhaCad" type="text" placeholder="SENHA">
-
-                </div>
-
-                <div id="btnCadastrar">
-                    <button href="index_usuário.html" ><a href="index_usuário.html">Entrar</a></button>
-                    <button >Cadastrar</button>
-
-                </div>
-                
-                
-            </form>
-
-            
-
-
-        </div>
-
-    </div>
-
-
-
+    <!--logo/municípios-->
     <nav>
-        <!--logo/municípios-->
         <div id="elementosNav">
             <img id="logo" src="imagens/logo2.jpg">
             <div id="txt">
@@ -134,16 +56,18 @@
         </div>
     </nav>
 
+
+    <!--Corpo da página - serviços-->
     <section>
-        <!--Corpo da página-->
         <div id="container">
             <h1>SERVIÇOS</h1>
         </div>
 
-        <a href="imagens/Tabela de valores.pdf" download> <button id="valores"> CONSULTE A TABELA DE PREÇOS </button> </a>
+        <a href="imagens/Tabela de valores.pdf" download> <button id="valores"> CONSULTE A TABELA DE PREÇOS </button>
+        </a>
 
         <div class="registroCivil">
-            <span id="título" style="padding-left: 5px; font-weight: bold; cursor: default" > REGISTRO CIVIL DAS PESSOAS
+            <span id="título" style="padding-left: 5px; font-weight: bold; cursor: default"> REGISTRO CIVIL DAS PESSOAS
                 NATURAIS:</span><br>
 
             <span palmeiras><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
@@ -162,7 +86,7 @@
                     <div class="localizaçãoCartório"> Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro
                     </div>
                     <div class="horário">Horário de funcionamento: 08 às 14hr</div>
-                    <button id="BtIniciarAgen" onclick="openFormRegistrar()" >INICIAR AGENDAMENTO</button>
+                    <button id="BtIniciarAgen" onclick="openFormRegistrar()">INICIAR AGENDAMENTO</button>
                 </li>
             </ul>
             <br>
@@ -289,7 +213,8 @@
         </div>
 
         <div class="jurídicas">
-            <span id="título" style="padding-left: 5px; font-weight: bold; cursor: default">TÍTULOS E DOCUMENTOS CIVIS DAS PESSOAS
+            <span id="título" style="padding-left: 5px; font-weight: bold; cursor: default">TÍTULOS E DOCUMENTOS CIVIS
+                DAS PESSOAS
                 JURÍDICAS:</span><br>
 
             <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
@@ -484,7 +409,8 @@
         </div>
 
         <div class="notas">
-            <span id="título" style="padding-left: 5px; font-weight: bold; cursor: default">TABELIONATO DE NOTAS:</span><br>
+            <span id="título" style="padding-left: 5px; font-weight: bold; cursor: default">TABELIONATO DE
+                NOTAS:</span><br>
             <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
                     style="padding-right: 8px; " class="bi bi-chevron-right " viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -811,7 +737,8 @@
         </div>
 
         <div class="protesto">
-            <span id="título" style="padding-left: 5px; font-weight: bold; cursor: default">PROTESTO DE TÍTULOS:</span><br>
+            <span id="título" style="padding-left: 5px; font-weight: bold; cursor: default">PROTESTO DE
+                TÍTULOS:</span><br>
 
             <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
                     style="padding-right: 8px; " class="bi bi-chevron-right " viewBox="0 0 16 16">
@@ -970,7 +897,7 @@
         </div>
 
         <div class="hipotecas">
-            <span  id="título" style="padding-left: 5px; font-weight: bold; cursor: default">REGISTRO DE IMÓVEIS E
+            <span id="título" style="padding-left: 5px; font-weight: bold; cursor: default">REGISTRO DE IMÓVEIS E
                 HIPOTECAS:</span><br>
 
             <span palmeiras> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor"
@@ -1434,25 +1361,125 @@
             <br>
 
         </div>
-
     </section>
-<div id="mapa">
-    <div id="email_mapa">
-        <h1 style="color: #050539; margin-left: -25px;">TEM ALGUMA DÚVIDA?</h1>
-        <h2 style="margin-left: 20px; margin-bottom: -10px; color: #050539;">Fale conosco:</h2>
-        <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail" required=""><br>
-        <textarea class="form-control" name="mensagem" id="mensagem" cols="30"  placeholder="Mensagem" rows="4" required=""> </textarea>
+
+
+    <!--dúvida/mapa de localização-->
+    <div id="mapa">
+        <div id="email_mapa">
+            <h1 style="color: #050539; margin-left: -7px;">TEM ALGUMA DÚVIDA?</h1>
+            <h2 style="margin-left: 20px; margin-bottom: -10px; color: #050539;">Fale conosco:</h2>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail" required=""><br>
+            <textarea class="form-control" name="mensagem" id="mensagem" cols="30" placeholder="Mensagem" rows="4"
+                required=""> </textarea>
+            <button id="enviarEmail">ENVIAR</button>
+        </div>
+        <div id="mapa1">
+            <iframe id="mapa2"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d661.1722466942848!2d-41.574793627819815!3d-12.515404943053182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x769e024f6124433%3A0x7f2a3308c71a2e!2sPra%C3%A7a%20Dr.%20Jos%C3%A9%20Gon%C3%A7alves%2C%2011%20-%20Palmeiras%2C%20BA%2C%2046930-000!5e1!3m2!1spt-BR!2sbr!4v1654299087374!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
-<div id="mapa1">
-    <iframe id="mapa2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d661.1722466942848!2d-41.574793627819815!3d-12.515404943053182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x769e024f6124433%3A0x7f2a3308c71a2e!2sPra%C3%A7a%20Dr.%20Jos%C3%A9%20Gon%C3%A7alves%2C%2011%20-%20Palmeiras%2C%20BA%2C%2046930-000!5e1!3m2!1spt-BR!2sbr!4v1654299087374!5m2!1spt-BR!2sbr"width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-</div>
+
+
+
+    <!--Rodapé-->
     <footer>
-        <!--Rodapé-->
         <div id="elementosRodapé">
             Cartórios Francisco da Motta | Agradecemos sua visita
         </div>
     </footer>
+
+
+
+    <!--popup login simples-->
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <button type="button" class="btn cancel" onclick="closeForm()"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                </svg></button>
+
+            <div id="txtLogin">LOGIN</div>
+            <input type="text" placeholder="CPF" name="CPF" required>
+            <input type="password" placeholder="SENHA" name="psw" required>
+            <button id="btnEntrar" class="btn">ENTRAR</button>
+        </form>
+    </div>
+
+
+    <!--popup outra forma de login do usuário-->
+    <div class="popupRegistrar" id="popupRegistrar">
+        <div class="popupContainer">
+            <form class="formRegistrar" method="get" action="">
+                <div class="formRegistrarTitle">
+
+                    <button id="closeModalRegistrar" onclick="closeFormRegistrar()"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            style="color: white;" class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg></button>
+                </div>
+                <strong>
+                    <h2>LOGIN</h2>
+                </strong>
+                <h3>Caso ja tenha cadastro, faça seu login para realizar o agendamento a partir do seu perfil</h3>
+
+                <div id="inputRegistrar">
+                    <input id="cpf" type="number" placeholder="CPF">
+                    <input id="senha" type="password" placeholder="SENHA">
+
+                </div>
+
+                <div id="btnRegistrar">
+                    <button href="index_usuário.html"><a href="index_usuário.html">ENTRAR</a></button>
+                    <button onclick="openFormCadastrar()">CADASTRAR</button>
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <!--popup cadastro do usuário-->
+    <div class="popupCadastrar" id="popupCadastrar">
+        <div class="popupContainerCadastrar">
+            <form class="formCadastrar" method="get" action="">
+                <div class="formCadastrarTitle">
+
+                    <button id="closeModalCadastrar" onclick="closeFormCadastrar()">X</button>
+                </div>
+                <strong>
+                    <h2>LOGIN</h2>
+                </strong>
+                <h3>Caso ja tenha cadastro, faça seu login para realizar o agendamento a partir do seu perfil</h3>
+
+                <div id="inputCadastrar">
+                    <input id="cpfCad" type="text" placeholder="CPF">
+                    <input id="senhaCad" type="text" placeholder="SENHA">
+
+                </div>
+
+                <div id="btnCadastrar">
+                    <button href="index_usuário.html"><a href="index_usuário.html">Entrar</a></button>
+                    <button>Cadastrar</button>
+
+                </div>
+
+
+            </form>
+
+        </div>
+    </div>
+
 
 </body>
 

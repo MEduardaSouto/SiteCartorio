@@ -37,6 +37,7 @@ header {
 }
 
 
+
 /*início da página*/
 section {
     margin-top: 0px;
@@ -111,7 +112,7 @@ h1 {
 
 
 
-/*tabela*/
+/*tabela de status*/
 #container2 {
     height: auto;
     width: 75%;
@@ -150,7 +151,6 @@ td {
     padding: 13px;
     color: #050539;
 }
-
 
 .exibirMais input {
     display: none;
@@ -195,7 +195,8 @@ td {
 
 
 
-/*Lista de Serciços*/
+
+/*serviços de cada município*/
 #municípios {
     margin-left: 50px;
     margin-top: 50px;
