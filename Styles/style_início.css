@@ -163,7 +163,7 @@ h1 {
     font-size: 16px;
 }
 
-#BtIniciarAgen {
+.BtIniciarAgen {
     background-color: #312E59;
     float: right;
     margin-right: 10px;
@@ -177,7 +177,7 @@ h1 {
     cursor: pointer;
 }
 
-#BtIniciarAgen:hover {
+.BtIniciarAgen:hover {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.578);
 }
 
