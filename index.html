@@ -27,7 +27,7 @@
                 <path fill-rule="evenodd"
                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
             </svg></button>
-        <a id="localização" href="index_usuário.html">LOCALIZAÇÃO</a>
+        <a id="localização" class="scrolllocal" >LOCALIZAÇÃO</a>
         <a id="inicio" class="scrollToTop" href="index_adm.html">INÍCIO</a>
     </header>
 
@@ -1372,7 +1372,7 @@
             <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail" required=""><br>
             <textarea class="form-control" name="mensagem" id="mensagem" cols="30" placeholder="Mensagem" rows="4"
                 required=""> </textarea>
-            <button id="enviarEmail">ENVIAR</button>
+            <button id="enviarEmail" onclick="enviado()">ENVIAR</button>
         </div>
         <div id="mapa1">
             <iframe id="mapa2"
@@ -1406,7 +1406,7 @@
             <div id="txtLogin">LOGIN</div>
             <input type="text" placeholder="CPF" name="CPF" required>
             <input type="password" placeholder="SENHA" name="psw" required>
-            <button id="btnEntrar" class="btn">ENTRAR</button>
+            <button id="btnEntrar" class="btn" onclick="">ENTRAR</button>
         </form>
     </div>
 

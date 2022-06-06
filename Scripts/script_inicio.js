@@ -15,6 +15,27 @@ document.querySelectorAll('[palmeiras]').forEach(folder => {
 })
 
 
+/*rolar página para  início */
+$(document).ready(function () {
+
+    $('.scrollToTop').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+    });
+
+});
+
+/*rolar página para localização */
+$(document).ready(function () {
+
+    $('.scrolllocal').click(function () {
+        $('html, body').animate({ scrollTop: 3500 }, 1000);
+        return false;
+    });
+
+});
+
+
 /*informações de cada município */
 const btnP = document.getElementById("btnPalmeiras");
 const btnM = document.getElementById("btnMucugê");
@@ -93,8 +114,6 @@ btnP.onclick = Palmeiras;
 
 
 
-
-
 function Iraquara() {
     document.querySelector(".registroCivil").style.display = "block";
     document.querySelector(".protesto").style.display = "block";
@@ -156,18 +175,10 @@ function Caeté() {
 }
 btnC.onclick = Caeté;
 
-
-
-/*rolar página para  início */
-$(document).ready(function () {
-
-    $('.scrollToTop').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 800);
-        return false;
-    });
-
-});
-
+/**Email enviado */
+function enviado(){
+    alert("E-mail enviado com sucesso");
+}
 
 
 /* popup login de outra forma */
@@ -197,6 +208,10 @@ function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
 closeForm();
+
+function redirecionar(){
+    window.location.href = "file:///C:/Users/gomes/OneDrive/%C3%81rea%20de%20Trabalho/RiseUp/index_usu%C3%A1rio.html";
+}
 
 
 

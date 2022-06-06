@@ -21,6 +21,7 @@ header {
     font-size: 18px;
     float: right;
     padding-top: 22px;
+    cursor: pointer;
 }
 
 #btnLogin {
