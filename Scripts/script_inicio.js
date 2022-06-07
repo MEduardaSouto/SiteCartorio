@@ -187,7 +187,7 @@ function closeFormRegistrar() {
 
 /*popup cadastrar */
 function openFormCadastrar() {
-    document.getElementById("popupContainer").style.display = "none";
+    
     document.getElementById("popupCadastrar").style.display = "block";
 }
 function closeFormCadastrar() {
