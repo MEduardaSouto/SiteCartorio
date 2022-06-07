@@ -192,7 +192,7 @@ function openFormCadastrar() {
     modalRegistrar.style.display = "block";
 }
 function closeFormCadastrar() {
-    document.getElementById("closeFormCadastrar").style.display = "none";
+    document.getElementById("popupRegistrar").style.display = "none";
 }
 
 
