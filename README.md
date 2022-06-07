@@ -7,7 +7,7 @@ O site foi criado para o administrador de cartórios, Francisco da Motta. Nele, 
 
 
 # Execução
-O site pode ser acessado pelo endereço: https://rise-up-beryl.vercel.app/ 
+O site pode ser acessado pelo endereço: https://eduardasouto28.github.io/RiseUp/
 
 Para uma melhor visão do site, aconselhamos usar uma tela com dimensões 16:09 ou 1338x1044
 
