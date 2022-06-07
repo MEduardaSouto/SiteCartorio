@@ -269,6 +269,28 @@ span:hover {
     color: #050539 !important;
 }
 
+.btnSelecionar{
+    width: 125.54px;
+    height: 35.2px;
+    background-color: #312E59;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btnNselecionar{
+    width: 125.54px;
+    height: 35.2px;
+    background-color: white;
+    color: #050539;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 
 
 
@@ -287,3 +309,152 @@ footer {
     font-size: 18px;
 }
 
+
+
+
+
+/* popup registrar */
+.popupContainer {
+    background-color: #312E59;
+    margin: 15% auto;
+    padding: 15px;
+    border-radius: 20px;
+    width: 45%;
+    height: 37%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: 'LexendDeca-Regular';
+    color: var(--title);
+
+    position: fixed;
+    margin-left: 390px;
+    margin-top: 230px;
+}
+
+
+.formRegistrar h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 30px;
+    font: bold;
+}
+
+.formRegistrar h3 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    margin-top: 43px;
+    font-size: 25px;
+    font-weight: normal;
+
+}
+
+#closeModalRegistrar {
+    margin-right: -38px;
+    margin-top: -35px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    float: right;
+}
+
+.formRegistrar {
+    margin-left: 2em;
+    margin-right: 2rem;
+}
+
+.formRegistrarTitle {
+    position: relative;
+    margin-left: 290px;
+    padding-top: 15px;
+    float: right;
+}
+.popupRegistrar {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/* popup sair do login */
+.form-popup {
+    position: fixed;
+    top: 10%;
+    right: 0px;
+    z-index: 9;
+}
+
+
+.form-container {
+    padding: 10px;
+    background-color: #050539;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.578);
+    height: 160px !important;
+    width: 180px !important;
+
+}
+
+.form-container .cancel {
+    background-color: #050539;
+    float: right;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}
+
+#fotologin {
+    color: white;
+    float: left;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+#nomeUsuário {
+    color: white;
+    padding-top: 10px;
+    height: 15px;
+    width: 100px;
+    float: left;
+    padding-left: 1px;
+
+}
+
+#sair {
+    color: white;
+    float: left !important;
+    padding-top: 30px;
+    padding-left: 3px;
+}
+
+#btnSair {
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+    padding-left: 15px;
+    font-size: 15PX;
+}

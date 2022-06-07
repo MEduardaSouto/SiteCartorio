@@ -4,7 +4,8 @@ const btnAgendar = document.getElementById("novoAgendamento");
 const btnStatus = document.getElementById("status");
 document.querySelector(".agendamento").style.display = "none";
 
-function novoAgendamento(){
+
+function novoAgendamento() {
 
     document.getElementById("tabela").style.display = "none"
 
@@ -16,10 +17,11 @@ function novoAgendamento(){
     btnStatus.classList.add('btnNselecionado')
 
 }
-btnAgendar.onclick= novoAgendamento;
+btnAgendar.onclick = novoAgendamento;
+novoAgendamento()
 
 
-function statusAgendamentos (){
+function statusAgendamentos() {
 
     document.querySelector('#tabela').style.display = "block"
 
@@ -30,8 +32,11 @@ function statusAgendamentos (){
     btnAgendar.classList.remove('btnSelecionado')
     btnAgendar.classList.add('btnNselecionado')
 
+    mudarServiço();
+    listaPalmeiras.style.display = "none"
+    document.getElementById("municípios").style.display = "block";
 }
-btnStatus.onclick= statusAgendamentos;
+btnStatus.onclick = statusAgendamentos;
 
 
 
@@ -50,9 +55,9 @@ document.querySelectorAll('[palmeiras]').forEach(folder => {
 const localiza = document.getElementsByClassName("localizaçãoCartório");
 const hr = document.getElementsByClassName("horário");
 
-function mudarServiço(município){
+function mudarServiço(município) {
 
-    if(município=="mucu"){
+    if (município == "mucu") {
         document.querySelector(".notas").style.display = "block";
         document.querySelector(".protesto").style.display = "block";
         document.querySelector(".jurídicas").style.display = "none";
@@ -62,23 +67,23 @@ function mudarServiço(município){
         for (let i = 0; i < localiza.length; ++i) {
             localiza[i].innerHTML = "Localização do cartório: Travessa Rua da Várzea, Galeria Sala 1, Cidade Histórica";
             hr[i].innerHTML = "Horário de funcionamento: 07 às 13hr";
-    
+
         }
     }
-    else if (município=="pal"){
+    else if (município == "pal") {
         document.querySelector(".hipotecas").style.display = "block";
         document.querySelector(".notas").style.display = "block";
         document.querySelector(".registroCivil").style.display = "block";
         document.querySelector(".jurídicas").style.display = "block";
-        document.querySelector(".hipotecas").style.display = "block";
+        document.querySelector(".protesto").style.display = "block";
 
         for (let i = 0; i < localiza.length; ++i) {
             localiza[i].innerHTML = "Localização do cartório: Praça Dr. José Gonçalves, n° 11, centro";
             hr[i].innerHTML = "Horário de funcionamento: 08 às 14hr";
-    
+
         }
     }
-    else if (município=="ira"){
+    else if (município == "ira") {
         document.querySelector(".registroCivil").style.display = "block";
         document.querySelector(".protesto").style.display = "block";
         document.querySelector(".notas").style.display = "block";
@@ -88,11 +93,11 @@ function mudarServiço(município){
         for (let i = 0; i < localiza.length; ++i) {
             localiza[i].innerHTML = "Localização do cartório: RO BR 122, s/n, centro";
             hr[i].innerHTML = "Horário de funcionamento: 08 às 14hr";
-    
+
         }
-    
+
     }
-    else{
+    else {
         document.querySelector(".registroCivil").style.display = "block";
         document.querySelector(".notas").style.display = "block";
         document.querySelector(".jurídicas").style.display = "none"
@@ -102,7 +107,7 @@ function mudarServiço(município){
         for (let i = 0; i < localiza.length; ++i) {
             localiza[i].innerHTML = "Localização do cartório: Rua dos Gatos, s/n, Galeria Empório do Vale, Sala 1";
             hr[i].innerHTML = "Horário de funcionamento: 08 às 14hr";
-    
+
         }
     }
 }
@@ -128,11 +133,60 @@ function expandir() {
     }
 }
 
+
+
 /**Iniciar um agendamento */
 const título = document.getElementById("título");
-const btn = document.getElementsByClassName("BtIniciarAgen")
-const span = document.querySelectorAll('[palmeiras]')
-const lista = document.getElementsByClassName("lista")
+const lista = document.querySelectorAll('ul')
+const listaPalmeiras = document.getElementById("listaPalmeiras")
+
+
+function escolhido() {
+
+    título.innerHTML = "MUNICÍPIO E SERVIÇO ESCOLHIDO";
+    título.style.fontSize = "24px"
+
+    document.querySelector(".hipotecas").style.display = "none";
+    document.querySelector(".notas").style.display = "none";
+    document.querySelector(".registroCivil").style.display = "none";
+    document.querySelector(".jurídicas").style.display = "none";
+    document.querySelector(".protesto").style.display = "none";
+    document.getElementById("municípios").style.display = "none";
+
+    listaPalmeiras.style.display = "block"
+}
+escolhido();
+
+
+
+
+
+
+/**Alterar cor do botão */
+function alterar(obj) {
+    obj.classList.remove('btnNselecionar')
+    obj.classList.add('btnSelecionar')
+}
+
+
+/*popup sair do login */
+function openFormSair() {
+    document.getElementById("Sair").style.display = "block";
+}
+function closeFormSair() {
+    document.getElementById("Sair").style.display = "none";
+}
+closeFormSair()
+
+/*popup sair do login */
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+closeForm()
+
 
 
 

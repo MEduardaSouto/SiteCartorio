@@ -39,8 +39,6 @@ btnSair.onclick = sairPerfil;
 
 
 /*alterar status */
-// const select = document.querySelectorAll(".status")
-// console.log(select);
 
 function mudarCor(obj) {
 
@@ -54,18 +52,15 @@ function mudarCor(obj) {
         obj.style.color = "blue";
     }
 
-    /*for (let i = 0; i < select.length; ++i) {
-        if (status == "pendente") {
-            select[i].style.color = "red";
-        }
-        else if (status == "concluido") {
-            select[i].style.color = "green";
-        }
-        else{
-            select[i].style.color = "blue";
-        }
-    }*/
-
-
 
 }
+
+
+/*popup sair do login */
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+closeForm()

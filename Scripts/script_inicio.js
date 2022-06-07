@@ -1,9 +1,4 @@
 
-function redirecionar() {
-    window.location.assign()
-}
-
-
 /*descer inoformações dos serviços */
 document.querySelectorAll('[palmeiras]').forEach(folder => {
 
@@ -201,13 +196,13 @@ function closeFormCadastrar() {
 
 
 /*popup login simples */
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
+function openFormSimples() {
+    document.getElementById("myFormSimples").style.display = "block";
 }
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+function closeFormSimples() {
+    document.getElementById("myFormSimples").style.display = "none";
 }
-closeForm();
+closeFormSimples();
 
 
 

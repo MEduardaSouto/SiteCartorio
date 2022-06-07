@@ -21,7 +21,7 @@
 
     <!--cabeçalho-->
     <header>
-        <button id="btnLogin" onclick="openForm()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+        <button id="btnLogin" onclick="openFormSimples()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                 fill="currentColor" class="bi bi-person-circle" id="login" viewBox="0 0 16 16">
                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
                 <path fill-rule="evenodd"
@@ -55,6 +55,7 @@
 
         </div>
     </nav>
+
 
 
     <!--Corpo da página - serviços-->
@@ -1394,9 +1395,9 @@
 
 
     <!--popup login simples-->
-    <div class="form-popup" id="myForm">
+    <div class="form-popup" id="myFormSimples">
         <form action="/action_page.php" class="form-container">
-            <button type="button" class="btn cancel" onclick="closeForm()"><svg xmlns="http://www.w3.org/2000/svg"
+            <button type="button" class="btn cancel" onclick="closeFormSimples()"><svg xmlns="http://www.w3.org/2000/svg"
                     width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                     <path
@@ -1432,13 +1433,13 @@
                 <h3>Caso ja tenha cadastro, faça seu login para realizar o agendamento a partir do seu perfil</h3>
 
                 <div id="inputRegistrar">
-                    <input id="cpf" type="number" placeholder="CPF" required>
+                    <input id="cpf" type="text" placeholder="CPF" required>
                     <input id="senha" type="password" placeholder="SENHA" required>
 
                 </div>
 
                 <div id="btnRegistrar">
-                    <button> <a href="index_usuário.html"> ENTRAR </a></button>
+                    <button> <a href="index_usuário.html"> ENTRAR </button></a>
                     <button onclick="openFormCadastrar()">CADASTRAR</button>
                 </div>
 
