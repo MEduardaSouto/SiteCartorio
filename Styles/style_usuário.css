@@ -220,7 +220,7 @@ td {
 }
 
 
-#listaFilha {
+.listaFilha {
     margin-top: 15px;
     background-color: #F8F8F8;
     width: 550px;

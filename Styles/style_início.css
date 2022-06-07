@@ -378,7 +378,7 @@ footer {
 .formRegistrar h2 {
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 255, 255);
-    margin-top: 0px;
+    margin-top: 35px;
     margin-left: 42%;
     font-size: 30px;
     font: bold;
@@ -397,10 +397,11 @@ footer {
 
 #closeModalRegistrar {
     margin-right: -20px;
-    margin-top: -30px;
+    margin-top: -35px;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    float: right;
 }
 
 .formRegistrar {

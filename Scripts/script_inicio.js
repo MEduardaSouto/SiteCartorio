@@ -209,9 +209,7 @@ function closeForm() {
 }
 closeForm();
 
-function redirecionar(){
-    window.location.href = "file:///C:/Users/gomes/OneDrive/%C3%81rea%20de%20Trabalho/RiseUp/index_usu%C3%A1rio.html";
-}
+
 
 
 

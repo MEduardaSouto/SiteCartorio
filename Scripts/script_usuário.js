@@ -131,16 +131,10 @@ function expandir() {
 /**Iniciar um agendamento */
 const título = document.getElementById("título");
 const btn = document.getElementsByClassName("BtIniciarAgen")
-const serviços = document.querySelectorAll('[palmeiras]')
+const span = document.querySelectorAll('[palmeiras]')
+const lista = document.getElementsByClassName("lista")
 
-function escolhido(){
-    
-    título.innerHTML = "MUNICÍPIO E SERVIÇO ESCOLHIDO";
 
-    for(let i=0; i<serviços.length; i++)
-    serviços[i].style.display = "none"
-
-}
 
 
 
