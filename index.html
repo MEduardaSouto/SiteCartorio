@@ -1452,25 +1452,36 @@
 
     <!--popup cadastro do usuário-->
     <div class="popupCadastrar" id="popupCadastrar">
-        <div class="popupContainerCadastrar">
+        <div class="popupContainer">
             <form class="formCadastrar" method="get" action="">
                 <div class="formCadastrarTitle">
 
                     <button id="closeModalCadastrar" onclick="closeFormCadastrar()">X</button>
                 </div>
                 <strong>
-                    <h2>LOGIN</h2>
+                    <h2 class="popup-title">CADASTRO</h2>
                 </strong>
-                <h3>Caso ja tenha cadastro, faça seu login para realizar o agendamento a partir do seu perfil</h3>
+                <h3>Realize seu cadastro para prosseguir com o agendamento</h3>
 
                 <div id="inputCadastrar">
-                    <input id="cpfCad" type="text" placeholder="CPF" required>
-                    <input id="senhaCad" type="text" placeholder="SENHA" required>
+                    <input id="nomeCompletoCad" class="inputCad" type="text" placeholder="Nome completo" required>
+                    
+                    <div class="inputContainer">
+                        <input id="emailCad" class="inputCad" type="email" placeholder="Email" required>
+                        <input id="cpfCad" class="inputCad" type="text" placeholder="CPF" required>
+                    </div>
+
+                    <input id="telefoneCad" class="inputCad" type="tel" placeholder="Telefone" required>
+                    
+                    <div class="inputContainer">
+                        <input id="senhaCad" class="inputCad" type="password" placeholder="Senha" required>
+                        <input id="senhaConfirmCad" class="inputCad" type="password" placeholder="Confirmar senha" required>
+                    </div>
 
                 </div>
 
                 <div id="btnCadastrar">
-                    <button>Cadastrar</button>
+                    <button> <a href="index_usuário.html">Cadastrar</a> </button>
 
                 </div>
 

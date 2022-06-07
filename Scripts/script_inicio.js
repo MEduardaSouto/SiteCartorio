@@ -171,7 +171,7 @@ function Caeté() {
 btnC.onclick = Caeté;
 
 /**Email enviado */
-function enviado(){
+function enviado() {
     alert("E-mail enviado com sucesso");
 }
 
@@ -187,11 +187,12 @@ function closeFormRegistrar() {
 
 /*popup cadastrar */
 function openFormCadastrar() {
-    document.getElementById("popupContainer").style.display = "none";
-    document.getElementById("popupCadastrar").style.display = "block";
+    document.getElementById("popupRegistrar").style.display = "none";
+    var modalRegistrar = document.getElementById("popupCadastrar");
+    modalRegistrar.style.display = "block";
 }
 function closeFormCadastrar() {
-    document.getElementById("popupCadastrar").style.display = "none";
+    document.getElementById("closeFormCadastrar").style.display = "none";
 }
 
 
