@@ -546,9 +546,9 @@ h3 {
 }
 
 #closeModalCadastrar {
-    border: 2px solid white;
+    border: 2px solid #312E59;
     color: white;
-    background-color: #050530;
+    background-color: #312E59;
     padding: 0.5rem;
     border-radius: 25px;
     position: relative;
