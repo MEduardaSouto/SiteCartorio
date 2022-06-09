@@ -378,7 +378,16 @@ footer {
     height: 100%;
     padding: 1em;
 }
+
 .inputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1
+}
+
+.inputContainerExtra{
     display: inline-block;
     justify-content: center;
     align-items: baseline;
