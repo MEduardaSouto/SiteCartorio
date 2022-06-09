@@ -379,9 +379,9 @@ footer {
     padding: 1em;
 }
 .inputContainer{
-    display: flex;
+    display: inline-block;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     width: 100%;
     flex-grow: 1
 }
@@ -430,6 +430,7 @@ footer {
 #btnRegistrar a {
     color: white;
     text-decoration: none;
+    position: relative;
 }
 
 #btnRegistrar button {
@@ -628,4 +629,58 @@ h3 {
 
 .btnCadastrar button::after {
     background-color: #312E59;
+}
+
+#emailCad{
+    display: block;
+    margin-bottom: 20px;
+    width: 47%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #C6C5CD;
+    border: none;
+    float: left;
+}
+
+#cpfCad{
+    display: block;
+    margin-bottom: 20px;
+    width: 47%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #C6C5CD;
+    border: none;
+    float: right;
+}
+
+#nomeCompletoCad, #telefoneCad {
+    display: block;
+    margin-bottom: 20px;
+    width: 99.5%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #C6C5CD;
+    border: none;
+}
+
+#senhaCad{
+    display: block;
+    margin-bottom: 20px;
+    width: 47%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #C6C5CD;
+    border: none;
+    float: left;
+}
+
+#senhaConfirmCad{
+    display: block;
+    margin-bottom: 20px;
+    width: 47%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #C6C5CD;
+    border: none;
+    float: right;
 }
