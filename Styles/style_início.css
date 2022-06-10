@@ -535,19 +535,10 @@ h3 {
 }
 
 #closeModalCadastrar {
-<<<<<<< HEAD
     border: none;
     background-color: transparent;
-    margin-left: 100%;
-=======
-    border: 2px solid #312E59;
+    margin-left: 98%;
     color: white;
-    background-color: #312E59;
-    padding: 0.5rem;
-    border-radius: 25px;
-    position: relative;
-    margin-left: 80%;
->>>>>>> 82b2b9c680c446c28c5e67b1b9e514714bfd8bf3
     cursor: pointer;
 }
 
@@ -592,7 +583,7 @@ h3 {
 }
 
 #nomeCompletoCad{
-    width: 470px;
+    width: 470px !important;
 }
 
 #cpfCad {
@@ -613,8 +604,9 @@ h3 {
     border-radius: 13px;
     border: none;
 }
+
 #telefoneCad{
-    width: 470px;
+    width: 470px !important;
 }
 
 #senhaConfirmCad{
@@ -638,8 +630,6 @@ h3 {
     font-weight: bold;
 }
 
-<<<<<<< HEAD
-=======
 .btnCadastrar button::after {
     background-color: #312E59;
 }
@@ -697,4 +687,3 @@ h3 {
     border: none;
     float: right;
 }
->>>>>>> 82b2b9c680c446c28c5e67b1b9e514714bfd8bf3
