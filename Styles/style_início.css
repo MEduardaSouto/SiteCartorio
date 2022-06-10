@@ -498,26 +498,19 @@ footer {
 .popupCadastrar {
     display: none;
     position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-
+    align-items: center;
 }
 
 .popupContainerCadastrar {
     background-color: #050539;
-    margin: 15% auto;
-    padding: 15px;
     border-radius: 20px;
-    width: 30%;
 
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    position: fixed;
+    margin-bottom: 100px;
 
     font-family: 'LexendDeca-Regular';
     color: var(--title);
@@ -529,48 +522,33 @@ h3 {
     font-family: 'Times New Roman', Times, serif;
     color: #ddd;
 
-
 }
-
-.inputCad{
-    display: block;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 50px;
-    border-radius: 13px;
-}
-
 .formCadastrar {
     margin-left: 2em;
     margin-right: 2rem;
-
+    align-items: center;
 }
 
 .formCadastrarTitle {
     position: relative;
     margin-left: 290px;
-    padding-top: 15px;
-
-
 }
 
 #closeModalCadastrar {
-    border: 2px solid #312E59;
+    border: none;
+    background-color: transparent;
+    margin-left: 98%;
     color: white;
-    background-color: #312E59;
-    padding: 0.5rem;
-    border-radius: 25px;
-    position: relative;
-    margin-left: 80%;
     cursor: pointer;
 }
 
 #btnCadastrar {
     display: flex;
     margin-top: 10px;
-    background-color: #050530;
+    background-color:transparent;
     color: #ddd;
-    width: 30px;
+    width: 40px;
+    border: none;
 
 }
 
@@ -583,12 +561,29 @@ h3 {
 
 #btnCadastrar button {
     color: #ffffff;
-    background-color: #030335e0;
-    border-color: rgb(9, 3, 88);
+    background-color: #37327C;
     padding: 7px;
     text-align: center;
     font-size: 20px;
     margin-left: 5px;
+    border:none;
+    border-radius: 5px;
+    width: 160px;
+}
+
+.inputCad{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 13px;
+    border: none;
+    padding-left: 10px;
+    background-color: #C6C5CD;
+}
+
+#nomeCompletoCad{
+    width: 470px !important;
 }
 
 #cpfCad {
@@ -597,33 +592,32 @@ h3 {
     width: 400px;
     height: 50px;
     border-radius: 13px;
-
+    border: none;
+    margin-left: 50px;
 }
 
 #senhaCad {
     display: block;
     margin-bottom: 20px;
-    width: 400px;
+    width: 300px;
     height: 50px;
     border-radius: 13px;
-
+    border: none;
 }
 
-#inputCadastrar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+#telefoneCad{
+    width: 470px !important;
+}
 
+#senhaConfirmCad{
+    margin-left: 30px;
 }
 
 .popupCadastrar {
-    display: none;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
 }
 
 .formCadastrar h3, .popupContainer h3 {
