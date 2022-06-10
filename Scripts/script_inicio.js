@@ -196,6 +196,7 @@ function closeFormCadastrar() {
 }
 
 
+
 /*popup login simples */
 function openFormSimples() {
     document.getElementById("myFormSimples").style.display = "block";
