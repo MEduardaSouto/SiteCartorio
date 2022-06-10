@@ -331,7 +331,7 @@ footer {
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 30%;
+    width: auto;
     margin-bottom: 10px;
     opacity: 0.8;
     border-radius: 5px;
