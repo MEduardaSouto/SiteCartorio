@@ -127,7 +127,7 @@ h1 {
 
 #valores {
     margin-top: 50px;
-    margin-right: 115px;
+    margin-right: 7.5%;
     background-color: #312E59;
     color: white;
     width: 250px;
@@ -378,10 +378,19 @@ footer {
     height: 100%;
     padding: 1em;
 }
+
 .inputContainer{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    flex-grow: 1
+}
+
+.inputContainerExtra{
+    display: inline-block;
+    justify-content: center;
+    align-items: baseline;
     width: 100%;
     flex-grow: 1
 }
@@ -430,6 +439,7 @@ footer {
 #btnRegistrar a {
     color: white;
     text-decoration: none;
+    position: relative;
 }
 
 #btnRegistrar button {
@@ -525,9 +535,19 @@ h3 {
 }
 
 #closeModalCadastrar {
+<<<<<<< HEAD
     border: none;
     background-color: transparent;
     margin-left: 100%;
+=======
+    border: 2px solid #312E59;
+    color: white;
+    background-color: #312E59;
+    padding: 0.5rem;
+    border-radius: 25px;
+    position: relative;
+    margin-left: 80%;
+>>>>>>> 82b2b9c680c446c28c5e67b1b9e514714bfd8bf3
     cursor: pointer;
 }
 
@@ -618,3 +638,63 @@ h3 {
     font-weight: bold;
 }
 
+<<<<<<< HEAD
+=======
+.btnCadastrar button::after {
+    background-color: #312E59;
+}
+
+#emailCad{
+    display: block;
+    margin-bottom: 20px;
+    width: 47%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #C6C5CD;
+    border: none;
+    float: left;
+}
+
+#cpfCad{
+    display: block;
+    margin-bottom: 20px;
+    width: 47%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #C6C5CD;
+    border: none;
+    float: right;
+}
+
+#nomeCompletoCad, #telefoneCad {
+    display: block;
+    margin-bottom: 20px;
+    width: 99.5%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #C6C5CD;
+    border: none;
+}
+
+#senhaCad{
+    display: block;
+    margin-bottom: 20px;
+    width: 47%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #C6C5CD;
+    border: none;
+    float: left;
+}
+
+#senhaConfirmCad{
+    display: block;
+    margin-bottom: 20px;
+    width: 47%;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #C6C5CD;
+    border: none;
+    float: right;
+}
+>>>>>>> 82b2b9c680c446c28c5e67b1b9e514714bfd8bf3
